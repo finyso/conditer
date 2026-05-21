@@ -1,0 +1,54 @@
+{% extends 'shop/base.html' %}
+
+{% block title %}👋 Выход | Сладкая жизнь{% endblock %}
+
+{% block extra_css %}
+<style>
+    .logout-container {
+        max-width: 500px;
+        margin: 80px auto;
+        text-align: center;
+    }
+    .message {
+        background: #e8f5e9;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+    .message h2 {
+        color: #2d1810;
+        margin-bottom: 15px;
+    }
+    .message p {
+        margin-bottom: 20px;
+        color: #666;
+    }
+    .links a {
+        display: inline-block;
+        margin: 0 10px;
+        padding: 10px 20px;
+        background: #ff9800;
+        color: white;
+        text-decoration: none;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+    }
+    .links a:hover {
+        background: #e68900;
+        transform: translateY(-2px);
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="logout-container">
+    <div class="message">
+        <h2>✅ Вы успешно вышли из системы</h2>
+        <p>Спасибо за посещение нашей кондитерской!</p>
+        <div class="links">
+            <a href="/">🏠 На главную</a>
+            <a href="/login/">🔑 Войти снова</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

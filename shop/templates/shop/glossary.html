@@ -1,0 +1,16 @@
+{% extends 'shop/base.html' %}
+
+{% block title %}📚 Словарь терминов | Сладкая жизнь{% endblock %}
+
+{% block content %}
+<h1>📖 Словарь кондитерских терминов</h1>
+<a href="{% url 'home' %}">← На главную</a>
+
+{% for term in terms %}
+    <div>
+        <h3>{{ term.term }}</h3>
+        <p>{{ term.definition }}</p>
+        <small>Добавлено: {{ term.added_date|date:"d/m/Y" }}</small>
+    </div>
+{% endfor %}
+{% endblock %}

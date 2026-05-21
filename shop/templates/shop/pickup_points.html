@@ -1,0 +1,17 @@
+{% extends 'shop/base.html' %}
+
+{% block title %}📍 Точки самовывоза | Сладкая жизнь{% endblock %}
+
+{% block content %}
+<h1>📍 Точки самовывоза</h1>
+<a href="{% url 'home' %}">← На главную</a>
+
+{% for point in points %}
+<div style="border:1px solid #ddd; margin:10px; padding:10px">
+    <h3>{{ point.name }}</h3>
+    <p>Адрес: {{ point.address }}</p>
+    <p>Телефон: {{ point.phone }}</p>
+    <p>Режим работы: {{ point.work_hours }}</p>
+</div>
+{% endfor %}
+{% endblock %}

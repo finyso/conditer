@@ -1,0 +1,36 @@
+{% extends 'shop/base.html' %}
+
+{% block title %}🏷️ Промокоды | Сладкая жизнь{% endblock %}
+
+{% block extra_css %}
+<style>
+    .promo { background: #e8f5e9; padding: 15px; margin: 10px; border-radius: 10px; }
+    .expired { background: #ffebee; }
+    .code { font-size: 24px; font-weight: bold; color: #d32f2f; }
+</style>
+{% endblock %}
+
+{% block content %}
+<h1>🏷️ Промокоды и купоны</h1>
+<a href="{% url 'home' %}">← На главную</a>
+
+<h2>✨ Действующие промокоды</h2>
+{% for promo in active_promocodes %}
+    <div class="promo">
+        <div class="code">{{ promo.code }}</div>
+        <p>Скидка: {{ promo.discount_percent }}%</p>
+        <p>Действует до: {{ promo.valid_to|date:"d/m/Y" }}</p>
+    </div>
+{% empty %}
+    <p>Нет действующих промокодов</p>
+{% endfor %}
+
+<h2>📦 Архивные промокоды</h2>
+{% for promo in expired_promocodes %}
+    <div class="promo expired">
+        <div class="code">{{ promo.code }}</div>
+        <p>Скидка: {{ promo.discount_percent }}%</p>
+        <p>Действовал до: {{ promo.valid_to|date:"d/m/Y" }}</p>
+    </div>
+{% endfor %}
+{% endblock %}

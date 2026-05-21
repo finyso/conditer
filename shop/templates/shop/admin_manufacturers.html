@@ -1,0 +1,26 @@
+{% extends 'shop/base.html' %}
+
+{% block title %}🏭 Производители / Ингредиенты{% endblock %}
+
+{% block content %}
+<h1>🏭 Управление ингредиентами</h1>
+
+<form method="post" style="margin-bottom: 20px; display: flex; gap: 10px;">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="Название" required style="padding: 8px;">
+    <input type="text" name="unit" placeholder="Ед.изм (кг, шт)" style="padding: 8px;">
+    <input type="number" name="cost_per_unit" step="0.01" placeholder="Цена" style="padding: 8px;">
+    <button type="submit" style="background: #28a745; color: white; padding: 8px 15px;">➕ Добавить</button>
+</form>
+
+<table border="1" cellpadding="8" style="width: 100%;">
+    <thead><tr><th>Название</th><th>Ед.изм</th><th>Цена</th></tr></thead>
+    <tbody>
+        {% for ing in ingredients %}
+        <tr><td>{{ ing.name }}</td><td>{{ ing.unit }}</td><td>{{ ing.cost_per_unit }} руб.</td></tr>
+        {% empty %}
+        <tr><td colspan="3">Нет ингредиентов</td></tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

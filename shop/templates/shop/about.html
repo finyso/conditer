@@ -1,0 +1,16 @@
+{% extends 'shop/base.html' %}
+
+{% block title %}📖 О компании | Сладкая жизнь{% endblock %}
+
+{% block content %}
+<h1>📖 О нашей кондитерской</h1>
+<a href="{% url 'home' %}">← На главную</a>
+
+<p>Мы - лучшая кондитерская в городе!</p>
+<p>Готовим сладости с любовью с 2020 года.</p>
+
+<h2>Информация о компании</h2>
+{% for info in info_list %}
+    <p><strong>{{ info.key }}:</strong> {{ info.value }}</p>
+{% endfor %}
+{% endblock %}

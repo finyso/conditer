@@ -1,0 +1,123 @@
+{% extends 'shop/base.html' %}
+
+{% block title %}📅 Календарь | Сладкая жизнь{% endblock %}
+
+{% block extra_css %}
+<style>
+    .calendar-container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+    h1 {
+        text-align: center;
+        color: #2d1810;
+    }
+    .calendar-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+        text-align: center;
+    }
+    .calendar-nav a {
+        background: #ff9800;
+        color: white;
+        text-decoration: none;
+        padding: 8px 15px;
+        border-radius: 20px;
+    }
+    .calendar-nav a:hover {
+        background: #e68900;
+    }
+    .calendar-nav h2 {
+        color: #4a2a1a;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+    th {
+        background: #4a2a1a;
+        color: white;
+        padding: 10px;
+    }
+    td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+        width: 14%;
+    }
+    .today {
+        background: #ff9800;
+        color: white;
+        font-weight: bold;
+        border-radius: 50%;
+        display: inline-block;
+        width: 30px;
+        line-height: 30px;
+    }
+    .empty {
+        background: #f5f5f5;
+    }
+    .time-info {
+        background: #2d1810;
+        color: white;
+        border-radius: 15px;
+        padding: 15px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .back-link {
+        display: inline-block;
+        margin-top: 20px;
+        color: #ff9800;
+        text-decoration: none;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="calendar-container">
+    <h1>📅 Текстовый календарь</h1>
+    
+    <div class="calendar-nav">
+        <a href="?year={{ prev_year }}&month={{ prev_month }}">← {{ prev_month }}.{{ prev_year }}</a>
+        <h2>{{ month_name }} {{ year }}</h2>
+        <a href="?year={{ next_year }}&month={{ next_month }}">{{ next_month }}.{{ next_year }} →</a>
+    </div>
+    
+    <table>
+        <thead>
+            <tr><th>Пн</th><th>Вт</th><th>Ср</th><th>Чт</th><th>Пт</th><th>Сб</th><th>Вс</th></tr>
+        </thead>
+        <tbody>
+            {% for week in calendar %}
+            <tr>
+                {% for day in week %}
+                    {% if day == 0 %}
+                        <td class="empty"></td>
+                    {% else %}
+                        <td>{% if day == today %}<span class="today">{{ day }}</span>{% else %}{{ day }}{% endif %}</td>
+                    {% endif %}
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+    <div class="time-info">
+        <p>🕐 Текущее время (ваша таймзона): {{ current_time|date:"d/m/Y H:i:s" }}</p>
+        <p>🌍 Ваш часовой пояс: {{ user_timezone }}</p>
+        <p>📅 UTC время: {{ utc_time|date:"d/m/Y H:i:s" }}</p>
+    </div>
+    
+    <div style="text-align: center;">
+        <a href="{% url 'home' %}" class="back-link">← Вернуться на главную</a>
+    </div>
+</div>
+{% endblock %}

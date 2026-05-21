@@ -1,0 +1,39 @@
+{% extends 'shop/base.html' %}
+
+{% block title %}🛍️ Оформление заказа{% endblock %}
+
+{% block extra_css %}
+<style>
+    .form-card { max-width: 600px; margin: 0 auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .cart-items { background: #f9f9f9; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
+    .cart-item { border-bottom: 1px solid #eee; padding: 8px 0; }
+    .total { font-size: 1.2em; font-weight: bold; text-align: right; margin-top: 10px; }
+    label { display: block; margin-top: 10px; font-weight: bold; }
+    input, select, textarea { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ddd; border-radius: 4px; }
+    button { margin-top: 15px; background: #28a745; color: white; border: none; padding: 10px; border-radius: 4px; cursor: pointer; width: 100%; font-size: 16px; }
+</style>
+{% endblock %}
+
+{% block content %}
+<h1>🛍️ Оформление заказа</h1>
+<p><a href="{% url 'products' %}">← Вернуться к товарам</a></p>
+
+<div class="form-card">
+    <div class="cart-items">
+        <h3>Корзина</h3>
+        {% for item in cart_items %}
+            <div class="cart-item">
+                {{ item.product.name }} x {{ item.quantity }} = {{ item.subtotal }} руб.
+            </div>
+        {% endfor %}
+        <div class="total">Итого: {{ cart_total }} руб.</div>
+    </div>
+
+    <h3>Данные доставки</h3>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">✅ Подтвердить заказ</button>
+    </form>
+</div>
+{% endblock %}

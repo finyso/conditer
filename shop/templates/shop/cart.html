@@ -1,0 +1,48 @@
+{% extends 'shop/base.html' %}
+
+{% block title %}🛒 Корзина | Сладкая жизнь{% endblock %}
+
+{% block extra_css %}
+<style>
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 10px; border-bottom: 1px solid #ddd; }
+    .total { font-size: 24px; font-weight: bold; margin: 20px 0; }
+    .btn { background: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; }
+</style>
+{% endblock %}
+
+{% block content %}
+<h1>🛒 Моя корзина</h1>
+<a href="{% url 'home' %}">← На главную</a>
+<a href="{% url 'products' %}">🍪 Продолжить покупки</a>
+
+{% if cart_items %}
+    <table>
+        <thead>
+            <tr><th>Товар</th><th>Цена</th><th>Количество</th><th>Сумма</th><th></th></tr>
+        </thead>
+        <tbody>
+            {% for item in cart_items %}
+            <tr>
+                <td>{{ item.product.name }}</td>
+                <td>{{ item.product.price }} руб.</td>
+                <td>
+                    <form method="post" action="{% url 'update_cart' item.product.id %}" style="display: flex; gap: 5px;">
+                        {% csrf_token %}
+                        <input type="number" name="quantity" value="{{ item.quantity }}" min="0" style="width: 60px;">
+                        <button type="submit">Обновить</button>
+                    </form>
+                </td>
+                <td>{{ item.subtotal }} руб.</td>
+                <td><a href="{% url 'remove_from_cart' item.product.id %}" style="color: red;">✖</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+    <div class="total">Итого: {{ cart_total }} руб.</div>
+    <a href="{% url 'order_create' %}" class="btn">✅ Оформить заказ</a>
+{% else %}
+    <p>Ваша корзина пуста. <a href="{% url 'products' %}">Перейти к товарам</a></p>
+{% endif %}
+{% endblock %}

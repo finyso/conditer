@@ -1,0 +1,13 @@
+{% extends 'shop/base.html' %}
+
+{% block title %}{{ news.title }} | Сладкая жизнь{% endblock %}
+
+{% block content %}
+<h1>{{ news.title }}</h1>
+{% if news.image %}
+<img src="{{ news.image.url }}" alt="{{ news.title }}" style="max-width: 100%;">
+{% endif %}
+<p>{{ news.content }}</p>
+<small>{{ news.created_at|date:"d/m/Y" }}</small>
+<a href="{% url 'news_list' %}">← Назад к новостям</a>
+{% endblock %}

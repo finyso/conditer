@@ -1,0 +1,124 @@
+{% extends 'shop/base.html' %}
+
+{% block title %}{% if product %}✏️ Редактировать товар{% else %}➕ Добавить товар{% endif %}{% endblock %}
+
+{% block extra_css %}
+<style>
+    .form-container {
+        max-width: 600px;
+        margin: 0 auto;
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 8px;
+        color: #4a2a1a;
+    }
+    input, select, textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+    .checkbox-group {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .checkbox-group input {
+        width: auto;
+    }
+    button {
+        background: #28a745;
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    button:hover {
+        background: #1e7e34;
+    }
+    .cancel-btn {
+        background: #6c757d;
+        margin-left: 10px;
+        text-decoration: none;
+        padding: 12px 25px;
+        border-radius: 8px;
+        color: white;
+        display: inline-block;
+    }
+    .cancel-btn:hover {
+        background: #5a6268;
+    }
+    hr {
+        margin: 20px 0;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="form-container">
+    <h1>{% if product %}✏️ Редактировать товар{% else %}➕ Добавить новый товар{% endif %}</h1>
+    <hr>
+    
+    <form method="post">
+        {% csrf_token %}
+        
+        <div class="form-group">
+            <label>Название товара *</label>
+            <input type="text" name="name" value="{{ product.name|default:'' }}" required>
+        </div>
+        
+        <div class="form-group">
+            <label>Категория *</label>
+            <select name="category" required>
+                <option value="">-- Выберите категорию --</option>
+                {% for cat in categories %}
+                <option value="{{ cat.id }}" {% if product.category.id == cat.id %}selected{% endif %}>
+                    {{ cat.name }}
+                </option>
+                {% endfor %}
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label>Цена (руб) *</label>
+            <input type="number" name="price" step="0.01" value="{{ product.price|default:'' }}" required>
+        </div>
+        
+        <div class="form-group">
+            <label>Единица измерения</label>
+            <select name="unit">
+                <option value="pcs" {% if product.unit == 'pcs' %}selected{% endif %}>штуки</option>
+                <option value="kg" {% if product.unit == 'kg' %}selected{% endif %}>килограммы</option>
+                <option value="g" {% if product.unit == 'g' %}selected{% endif %}>граммы</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label>Описание</label>
+            <textarea name="description" rows="4">{{ product.description|default:'' }}</textarea>
+        </div>
+        
+        <div class="form-group checkbox-group">
+            <input type="checkbox" name="is_available" id="is_available" {% if product.is_available or not product %}checked{% endif %}>
+            <label for="is_available" style="margin-bottom: 0;">Товар доступен для продажи</label>
+        </div>
+        
+        <div style="margin-top: 30px;">
+            <button type="submit">💾 Сохранить</button>
+            <a href="{% url 'admin_products' %}" class="cancel-btn">↩️ Отмена</a>
+        </div>
+    </form>
+</div>
+{% endblock %}

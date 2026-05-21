@@ -1,0 +1,134 @@
+{% extends 'shop/base.html' %}
+
+{% block title %}✏️ Редактирование заказа #{{ order.id }}{% endblock %}
+
+{% block extra_css %}
+<style>
+    .edit-form {
+        max-width: 800px;
+        margin: 0 auto;
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 8px;
+        color: #4a2a1a;
+    }
+    input, select, textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+    button {
+        background: #ff9800;
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    button:hover {
+        background: #e68900;
+    }
+    .cancel-btn {
+        background: #6c757d;
+        margin-left: 10px;
+        display: inline-block;
+        padding: 12px 25px;
+        border-radius: 8px;
+        color: white;
+        text-decoration: none;
+    }
+    .cancel-btn:hover {
+        background: #5a6268;
+    }
+    hr {
+        margin: 20px 0;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="edit-form">
+    <h1>✏️ Редактирование заказа #{{ order.id }}</h1>
+    <p><strong>Текущий клиент:</strong> {{ order.client.name }}</p>
+    <p><strong>Сумма заказа:</strong> {{ order.total_amount }} руб.</p>
+    <hr>
+    
+    <form method="post">
+        {% csrf_token %}
+        
+        <div class="form-group">
+            <label>Клиент:</label>
+            <select name="client" required>
+                <option value="">-- Выберите клиента --</option>
+                {% for client in clients %}
+                <option value="{{ client.id }}" {% if order.client.id == client.id %}selected{% endif %}>
+                    {{ client.name }} ({{ client.phone }})
+                </option>
+                {% endfor %}
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label>Адрес доставки:</label>
+            <textarea name="delivery_address" rows="3" required>{{ order.delivery_address }}</textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Дата доставки:</label>
+            <input type="date" name="delivery_date" value="{{ order.delivery_date|date:'Y-m-d' }}">
+        </div>
+        
+        <div class="form-group">
+            <label>Статус заказа:</label>
+            <select name="status">
+                {% for status_code, status_name in statuses %}
+                <option value="{{ status_code }}" {% if order.status == status_code %}selected{% endif %}>
+                    {{ status_name }}
+                </option>
+                {% endfor %}
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label>Промокод:</label>
+            <select name="promo_code">
+                <option value="">-- Без промокода --</option>
+                {% for promo in promocodes %}
+                <option value="{{ promo.id }}" {% if order.promo_code and order.promo_code.id == promo.id %}selected{% endif %}>
+                    {{ promo.code }} ({{ promo.discount_percent }}%)
+                </option>
+                {% endfor %}
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label>Точка самовывоза:</label>
+            <select name="pickup_point">
+                <option value="">-- Выберите точку --</option>
+                {% for point in pickup_points %}
+                <option value="{{ point.id }}" {% if order.pickup_point and order.pickup_point.id == point.id %}selected{% endif %}>
+                    {{ point.name }} ({{ point.address }})
+                </option>
+                {% endfor %}
+            </select>
+        </div>
+        
+        <div style="margin-top: 30px;">
+            <button type="submit">💾 Сохранить изменения</button>
+            <a href="{% url 'employee_order_detail' order.id %}" class="cancel-btn">↩️ Отмена</a>
+        </div>
+    </form>
+</div>
+{% endblock %}

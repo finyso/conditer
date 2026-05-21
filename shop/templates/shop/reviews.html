@@ -1,0 +1,48 @@
+{% extends 'shop/base.html' %}
+
+{% block title %}⭐ Отзывы | Сладкая жизнь{% endblock %}
+
+{% block extra_css %}
+<style>
+    .review { border-bottom: 1px solid #ddd; padding: 15px; margin: 10px 0; }
+    .rating { color: gold; font-size: 20px; }
+    .form-container { background: #f9f9f9; padding: 20px; border-radius: 5px; margin: 20px 0; }
+</style>
+{% endblock %}
+
+{% block content %}
+<h1>⭐ Отзывы наших клиентов</h1>
+<a href="{% url 'home' %}">← На главную</a>
+
+<p><strong>Средняя оценка: {{ avg_rating }} / 5</strong></p>
+
+{% if user.is_authenticated and user.client %}
+    <div class="form-container">
+        <h3>Оставить отзыв</h3>
+        <form method="post" action="{% url 'add_review' %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Отправить отзыв</button>
+        </form>
+    </div>
+{% elif user.is_authenticated %}
+    <p><strong>Только клиенты могут оставлять отзывы.</strong> <a href="{% url 'logout' %}">Выйдите</a> и зарегистрируйтесь как клиент.</p>
+{% else %}
+    <p><a href="{% url 'login' %}">Войдите</a> или <a href="{% url 'register' %}">зарегистрируйтесь</a> чтобы оставить отзыв</p>
+{% endif %}
+
+{% for review in reviews %}
+    <div class="review">
+        <strong>{{ review.client.name }}</strong>
+        <div class="rating">
+            {% for i in "12345"|make_list %}
+                {% if forloop.counter <= review.rating %}★{% else %}☆{% endif %}
+            {% endfor %}
+        </div>
+        <p>{{ review.text }}</p>
+        <small>{{ review.created_at|date:"d/m/Y H:i" }}</small>
+    </div>
+{% empty %}
+    <p>Отзывов пока нет. Будьте первым!</p>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends 'shop/base.html' %}
+
+{% block title %}📁 Управление категориями{% endblock %}
+
+{% block content %}
+<h1>📁 Управление категориями</h1>
+
+<div style="margin-bottom: 20px;">
+    <form method="post" style="display: flex; gap: 10px; align-items: flex-end;">
+        {% csrf_token %}
+        <div>
+            <label>Название категории:</label>
+            <input type="text" name="name" required style="padding: 8px; width: 200px;">
+        </div>
+        <div>
+            <label>Описание:</label>
+            <input type="text" name="description" style="padding: 8px; width: 300px;">
+        </div>
+        <button type="submit" style="background: #28a745; color: white; padding: 8px 15px; border: none; border-radius: 5px;">➕ Добавить</button>
+    </form>
+</div>
+
+<table border="1" cellpadding="8" style="width: 100%; border-collapse: collapse;">
+    <thead>
+        <tr><th>ID</th><th>Название</th><th>Описание</th><th>Действия</th></tr>
+    </thead>
+    <tbody>
+        {% for cat in categories %}
+        <tr>
+            <td>{{ cat.id }}</td>
+            <td>{{ cat.name }}</td>
+            <td>{{ cat.description|default:"-" }}</td>
+            <td>
+                <a href="/admin/shop/category/{{ cat.id }}/change/" style="color: #ff9800;">✏️</a>
+            </td>
+        </tr>
+        {% empty %}
+        <tr><td colspan="4">Нет категорий</td></tr>
+        {% endfor %}
+    </tbody>
+</table>
+<p><a href="{% url 'employee_dashboard' %}">← Назад</a></p>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'shop/base.html' %}
+
+{% block title %}📦 Мои заказы | Сладкая жизнь{% endblock %}
+
+{% block content %}
+<h1>📦 Мои заказы</h1>
+<a href="{% url 'home' %}">← На главную</a>
+<a href="{% url 'products' %}">🛒 Продолжить покупки</a>
+
+{% for order in orders %}
+    <div style="border: 1px solid #ddd; margin: 10px; padding: 10px;">
+        <h3>Заказ #{{ order.id }}</h3>
+        <p>Дата: {{ order.order_date|date:"d/m/Y H:i" }}</p>
+        <p>Дата доставки: {{ order.delivery_date|date:"d/m/Y"|default:"Не указана" }}</p>
+        <p>Статус: {{ order.get_status_display }}</p>
+        <p>Сумма: {{ order.total_amount }} руб.</p>
+        <p>Адрес: {{ order.delivery_address }}</p>
+    </div>
+{% empty %}
+    <p>У вас пока нет заказов</p>
+{% endfor %}
+{% endblock %}

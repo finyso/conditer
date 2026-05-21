@@ -1,0 +1,32 @@
+{% extends 'shop/base.html' %}
+
+{% block title %}Создание заказа (сотрудник){% endblock %}
+
+{% block extra_css %}
+<style>
+    .form-card { max-width: 600px; margin: 0 auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    label { display: block; margin-top: 10px; font-weight: bold; }
+    input, select, textarea { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ddd; border-radius: 4px; }
+    button { margin-top: 15px; background: #28a745; color: white; border: none; padding: 10px; border-radius: 4px; cursor: pointer; width: 100%; font-size: 16px; }
+</style>
+{% endblock %}
+
+{% block content %}
+<h1>➕ Создание заказа (сотрудник)</h1>
+<p><a href="{% url 'employee_dashboard' %}">← Назад в панель</a></p>
+
+<div class="form-card">
+    <form method="post">
+        {% csrf_token %}
+        <label>Клиент:</label>
+        <select name="client_id" required>
+            <option value="">Выберите клиента</option>
+            {% for client in clients %}
+                <option value="{{ client.id }}">{{ client.name }} ({{ client.phone }})</option>
+            {% endfor %}
+        </select>
+        {{ form.as_p }}
+        <button type="submit">✅ Создать заказ</button>
+    </form>
+</div>
+{% endblock %}

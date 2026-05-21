@@ -1,0 +1,19 @@
+{% extends 'shop/base.html' %}
+
+{% block content %}
+<h1>📊 Статистика продаж</h1>
+<p>Всего заказов: {{ total_orders }}</p>
+<p>Общая выручка: {{ total_revenue|floatformat:0 }} руб.</p>
+
+<h2>Продажи по товарам</h2>
+<table border="1">
+    <tr><th>Товар</th><th>Продано (шт)</th><th>Выручка</th></tr>
+    {% for item in product_sales %}
+    <tr>
+        <td>{{ item.product__name }}</td>
+        <td>{{ item.total_quantity }}</td>
+        <td>{{ item.total_revenue|floatformat:2 }} руб.</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

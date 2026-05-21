@@ -1,0 +1,73 @@
+{% extends 'shop/base.html' %}
+
+{% block title %}🔑 Вход | Сладкая жизнь{% endblock %}
+
+{% block extra_css %}
+<style>
+    .login-container {
+        max-width: 500px;
+        margin: 50px auto;
+        background: white;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+    .login-container h2 {
+        text-align: center;
+        color: #2d1810;
+        margin-bottom: 30px;
+    }
+    form p {
+        margin-bottom: 15px;
+    }
+    form label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #4a2a1a;
+    }
+    form input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+    button {
+        width: 100%;
+        background: #ff9800;
+        color: white;
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    button:hover {
+        background: #e68900;
+    }
+    .register-link {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .register-link a {
+        color: #ff9800;
+        text-decoration: none;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="login-container">
+    <h2>🔑 Вход в систему</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Войти</button>
+    </form>
+    <div class="register-link">
+        <a href="{% url 'register' %}">📝 Регистрация</a>
+    </div>
+</div>
+{% endblock %}

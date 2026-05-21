@@ -1,0 +1,62 @@
+{% extends 'shop/base.html' %}
+
+{% block title %}🗑️ Удаление товара{% endblock %}
+
+{% block extra_css %}
+<style>
+    .confirm-container {
+        max-width: 500px;
+        margin: 50px auto;
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+    .product-info {
+        background: #f5f5f5;
+        padding: 15px;
+        border-radius: 10px;
+        margin: 20px 0;
+    }
+    button {
+        background: #dc3545;
+        color: white;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    button:hover {
+        background: #c82333;
+    }
+    .cancel-link {
+        display: inline-block;
+        margin-left: 15px;
+        color: #6c757d;
+        text-decoration: none;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="confirm-container">
+    <h1>🗑️ Удаление товара</h1>
+    <p>Вы уверены, что хотите удалить товар?</p>
+    
+    <div class="product-info">
+        <p><strong>{{ product.name }}</strong></p>
+        <p>Категория: {{ product.category.name }}</p>
+        <p>Цена: {{ product.price }} руб.</p>
+    </div>
+    
+    <p style="color: red;">Это действие невозможно отменить!</p>
+    
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">✅ Да, удалить</button>
+        <a href="{% url 'admin_products' %}" class="cancel-link">❌ Отмена</a>
+    </form>
+</div>
+{% endblock %}

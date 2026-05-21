@@ -1,0 +1,1538 @@
+INFO 2026-05-21 05:27:42,657 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 05:27:46,973 basehttp "GET / HTTP/1.1" 200 12101
+INFO 2026-05-21 05:27:51,696 basehttp "GET /about/ HTTP/1.1" 200 1012
+INFO 2026-05-21 05:27:54,090 basehttp "GET / HTTP/1.1" 200 12055
+ERROR 2026-05-21 05:27:56,507 log Internal Server Error: /statistics/
+Traceback (most recent call last):
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\453502\IGI_LR5\shop\views.py", line 189, in statistics
+    total_revenue = sum(float(cat['revenue'] or 0) for cat in category_sales_list)
+  File "D:\453502\IGI_LR5\shop\views.py", line 189, in <genexpr>
+    total_revenue = sum(float(cat['revenue'] or 0) for cat in category_sales_list)
+                              ~~~^^^^^^^^^^^
+KeyError: 'revenue'
+ERROR 2026-05-21 05:27:56,513 basehttp "GET /statistics/ HTTP/1.1" 500 76126
+INFO 2026-05-21 05:30:49,307 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 05:30:52,813 basehttp "GET / HTTP/1.1" 200 12117
+INFO 2026-05-21 05:30:56,038 basehttp "GET /statistics/ HTTP/1.1" 200 14741
+INFO 2026-05-21 05:31:22,013 basehttp "GET / HTTP/1.1" 200 12082
+INFO 2026-05-21 05:31:51,896 basehttp "GET /news/ HTTP/1.1" 200 1924
+INFO 2026-05-21 05:31:52,028 basehttp "GET /media/news/%D0%BA%D1%83%D0%BB.jpg HTTP/1.1" 200 49467
+INFO 2026-05-21 05:31:55,310 basehttp "GET /news/4/ HTTP/1.1" 200 645
+INFO 2026-05-21 05:31:59,790 basehttp "GET /news/ HTTP/1.1" 200 1924
+INFO 2026-05-21 05:32:05,516 basehttp "GET / HTTP/1.1" 200 12029
+INFO 2026-05-21 05:32:17,339 basehttp "GET /contacts/ HTTP/1.1" 200 2424
+INFO 2026-05-21 05:32:22,961 basehttp "GET / HTTP/1.1" 200 12070
+WARNING 2026-05-21 05:50:18,399 log Not Found: /nonexistent-page-12345/
+INFO 2026-05-21 06:07:55,393 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 06:08:03,066 basehttp "GET / HTTP/1.1" 200 12021
+INFO 2026-05-21 06:09:37,867 basehttp "GET / HTTP/1.1" 200 12032
+INFO 2026-05-21 06:09:39,810 basehttp "GET /products/ HTTP/1.1" 200 5250
+INFO 2026-05-21 06:09:48,938 basehttp "GET /products/?page=2 HTTP/1.1" 200 3382
+INFO 2026-05-21 06:09:52,231 basehttp "GET / HTTP/1.1" 200 12097
+INFO 2026-05-21 06:09:54,402 basehttp "GET /reviews/ HTTP/1.1" 200 4691
+INFO 2026-05-21 06:10:04,842 basehttp "GET / HTTP/1.1" 200 12033
+INFO 2026-05-21 06:10:06,126 basehttp "GET /promocodes/ HTTP/1.1" 200 1619
+INFO 2026-05-21 06:10:11,048 basehttp "GET / HTTP/1.1" 200 12167
+INFO 2026-05-21 06:10:12,848 basehttp "GET /about/ HTTP/1.1" 200 1012
+INFO 2026-05-21 06:10:15,693 basehttp "GET / HTTP/1.1" 200 12005
+INFO 2026-05-21 06:10:17,147 basehttp "GET /news/ HTTP/1.1" 200 1924
+INFO 2026-05-21 06:10:17,169 basehttp "GET /media/news/%D0%BA%D1%83%D0%BB.jpg HTTP/1.1" 304 0
+INFO 2026-05-21 06:10:20,556 basehttp "GET / HTTP/1.1" 200 12044
+INFO 2026-05-21 06:10:23,546 basehttp "GET /glossary/ HTTP/1.1" 200 1809
+INFO 2026-05-21 06:10:26,059 basehttp "GET / HTTP/1.1" 200 12020
+INFO 2026-05-21 06:10:28,464 basehttp "GET /vacancies/ HTTP/1.1" 200 1217
+INFO 2026-05-21 06:10:34,523 basehttp "GET / HTTP/1.1" 200 12011
+INFO 2026-05-21 06:10:37,743 basehttp "GET /contacts/ HTTP/1.1" 200 2424
+INFO 2026-05-21 06:10:40,395 basehttp "GET / HTTP/1.1" 200 12106
+INFO 2026-05-21 06:10:43,636 basehttp "GET /privacy/ HTTP/1.1" 200 331
+INFO 2026-05-21 06:10:45,664 basehttp "GET / HTTP/1.1" 200 12023
+INFO 2026-05-21 06:10:47,777 basehttp "GET /statistics/ HTTP/1.1" 200 14741
+INFO 2026-05-21 06:12:09,821 basehttp "GET / HTTP/1.1" 200 12048
+INFO 2026-05-21 06:12:14,108 basehttp "GET /login/ HTTP/1.1" 200 874
+INFO 2026-05-21 06:12:24,793 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:12:24,801 basehttp "GET /redirect-after-login/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:12:24,822 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 3583
+INFO 2026-05-21 06:12:28,892 basehttp "GET /employee/clients/ HTTP/1.1" 200 849
+INFO 2026-05-21 06:12:30,713 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 3583
+INFO 2026-05-21 06:12:33,365 basehttp "GET / HTTP/1.1" 200 12755
+INFO 2026-05-21 06:12:37,826 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:12:38,174 basehttp "GET / HTTP/1.1" 200 12020
+INFO 2026-05-21 06:12:39,825 basehttp "GET /login/ HTTP/1.1" 200 874
+INFO 2026-05-21 06:12:48,707 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:12:48,715 basehttp "GET /redirect-after-login/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:12:48,758 basehttp "GET /admin/ HTTP/1.1" 200 19999
+INFO 2026-05-21 06:12:49,016 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+INFO 2026-05-21 06:12:49,021 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2026-05-21 06:12:49,022 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+INFO 2026-05-21 06:12:49,028 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2026-05-21 06:12:49,029 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2026-05-21 06:12:49,030 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+INFO 2026-05-21 06:12:49,039 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2026-05-21 06:12:49,051 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2026-05-21 06:12:49,051 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2026-05-21 06:12:49,052 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2026-05-21 06:13:13,197 basehttp "GET /admin/ HTTP/1.1" 200 19999
+WARNING 2026-05-21 06:13:13,441 log Not Found: /favicon.ico
+WARNING 2026-05-21 06:13:13,442 basehttp "GET /favicon.ico HTTP/1.1" 404 8915
+INFO 2026-05-21 06:13:16,158 basehttp "GET /admin/shop/category/ HTTP/1.1" 200 18625
+INFO 2026-05-21 06:13:16,180 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:13:20,342 basehttp "GET /admin/shop/category/7/change/ HTTP/1.1" 200 16794
+INFO 2026-05-21 06:13:20,369 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:13:22,888 basehttp "GET /admin/shop/category/ HTTP/1.1" 200 18625
+INFO 2026-05-21 06:13:24,691 basehttp "GET /admin/shop/category/6/change/ HTTP/1.1" 200 16804
+INFO 2026-05-21 06:13:24,717 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:13:27,006 basehttp "GET /admin/shop/client/ HTTP/1.1" 200 24875
+INFO 2026-05-21 06:13:27,027 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:13:34,055 basehttp "GET /admin/shop/client/16/change/ HTTP/1.1" 200 21939
+INFO 2026-05-21 06:13:34,086 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:13:38,622 basehttp "GET /admin/shop/companyinfo/ HTTP/1.1" 200 18544
+INFO 2026-05-21 06:13:38,653 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:13:41,168 basehttp "GET /admin/shop/companyinfo/6/change/ HTTP/1.1" 200 16922
+INFO 2026-05-21 06:13:41,191 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:13:43,489 basehttp "GET /admin/shop/companyinfo/ HTTP/1.1" 200 18544
+INFO 2026-05-21 06:13:45,242 basehttp "GET /admin/shop/companyinfo/5/change/ HTTP/1.1" 200 16856
+INFO 2026-05-21 06:13:45,270 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:13:48,219 basehttp "GET /admin/shop/companyinfo/ HTTP/1.1" 200 18544
+INFO 2026-05-21 06:13:49,683 basehttp "GET /admin/shop/companyinfo/4/change/ HTTP/1.1" 200 16893
+INFO 2026-05-21 06:13:49,713 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:13:51,870 basehttp "GET /admin/shop/companyinfo/ HTTP/1.1" 200 18544
+INFO 2026-05-21 06:13:54,012 basehttp "GET /admin/shop/companyinfo/3/change/ HTTP/1.1" 200 16846
+INFO 2026-05-21 06:13:54,049 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:13:57,010 basehttp "GET /admin/shop/companyinfo/ HTTP/1.1" 200 18544
+INFO 2026-05-21 06:13:59,743 basehttp "GET /admin/shop/companyinfo/2/change/ HTTP/1.1" 200 16922
+INFO 2026-05-21 06:13:59,770 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:14:01,916 basehttp "GET /admin/shop/companyinfo/ HTTP/1.1" 200 18544
+INFO 2026-05-21 06:14:03,677 basehttp "GET /admin/shop/companyinfo/1/change/ HTTP/1.1" 200 16834
+INFO 2026-05-21 06:14:03,710 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:14:05,929 basehttp "GET /admin/shop/contact/ HTTP/1.1" 200 17861
+INFO 2026-05-21 06:14:05,958 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:14:10,211 basehttp "GET /admin/shop/contact/4/change/ HTTP/1.1" 200 19922
+INFO 2026-05-21 06:14:10,244 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:14:13,877 basehttp "GET /admin/shop/contact/ HTTP/1.1" 200 17861
+INFO 2026-05-21 06:14:38,912 basehttp "GET /admin/shop/contact/3/change/ HTTP/1.1" 200 19890
+INFO 2026-05-21 06:14:38,942 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:14:45,053 basehttp "GET /admin/shop/contact/ HTTP/1.1" 200 17861
+INFO 2026-05-21 06:14:46,481 basehttp "GET /admin/shop/contact/4/change/ HTTP/1.1" 200 19922
+INFO 2026-05-21 06:14:46,508 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:14:51,298 basehttp "GET /admin/shop/employee/ HTTP/1.1" 200 21616
+INFO 2026-05-21 06:14:51,332 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:14:57,933 basehttp "GET /admin/shop/contact/ HTTP/1.1" 200 17861
+INFO 2026-05-21 06:14:57,959 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:15:03,258 basehttp "GET /admin/shop/contact/3/change/ HTTP/1.1" 200 19890
+INFO 2026-05-21 06:15:03,291 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:15:06,197 basehttp "GET /admin/shop/contact/ HTTP/1.1" 200 17861
+INFO 2026-05-21 06:15:06,221 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:15:09,063 basehttp "GET /admin/shop/employee/ HTTP/1.1" 200 21616
+INFO 2026-05-21 06:15:09,093 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:15:15,129 basehttp "GET /admin/shop/employee/5/change/ HTTP/1.1" 200 23137
+INFO 2026-05-21 06:15:15,159 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:15:18,650 basehttp "GET /admin/shop/employee/ HTTP/1.1" 200 21616
+INFO 2026-05-21 06:15:27,360 basehttp "GET /admin/shop/contact/ HTTP/1.1" 200 17861
+INFO 2026-05-21 06:15:27,388 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:15:35,835 basehttp "GET /admin/shop/contact/ HTTP/1.1" 200 17861
+INFO 2026-05-21 06:15:42,247 basehttp "GET /admin/shop/employee/ HTTP/1.1" 200 21616
+INFO 2026-05-21 06:15:42,279 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:15:44,210 basehttp "GET /admin/shop/employee/5/change/ HTTP/1.1" 200 23137
+INFO 2026-05-21 06:15:44,238 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:15:47,510 basehttp "GET /admin/shop/contact/add/ HTTP/1.1" 200 19471
+INFO 2026-05-21 06:15:47,541 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:16:36,266 basehttp "GET /admin/shop/employee/ HTTP/1.1" 200 21616
+INFO 2026-05-21 06:16:36,292 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:16:38,623 basehttp "GET /admin/shop/contact/ HTTP/1.1" 200 17861
+INFO 2026-05-21 06:16:38,651 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:16:40,861 basehttp "GET /admin/shop/contact/4/change/ HTTP/1.1" 200 19922
+INFO 2026-05-21 06:16:40,892 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:16:44,087 basehttp "GET /admin/shop/contact/ HTTP/1.1" 200 17861
+INFO 2026-05-21 06:16:45,762 basehttp "GET /admin/shop/contact/2/change/ HTTP/1.1" 200 19959
+INFO 2026-05-21 06:16:45,792 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:17:08,228 basehttp "POST /admin/shop/contact/add/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:17:08,271 basehttp "GET /admin/shop/contact/ HTTP/1.1" 200 18499
+INFO 2026-05-21 06:17:08,304 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:17:11,559 basehttp "GET /admin/shop/employee/ HTTP/1.1" 200 21616
+INFO 2026-05-21 06:17:11,585 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:17:14,850 basehttp "GET /admin/shop/glossaryterm/ HTTP/1.1" 200 18734
+INFO 2026-05-21 06:17:14,878 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:17:17,322 basehttp "GET /admin/shop/glossaryterm/7/change/ HTTP/1.1" 200 16956
+INFO 2026-05-21 06:17:17,361 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:17:19,862 basehttp "GET /admin/shop/glossaryterm/ HTTP/1.1" 200 18734
+INFO 2026-05-21 06:17:21,541 basehttp "GET /admin/shop/ingredient/ HTTP/1.1" 200 19008
+INFO 2026-05-21 06:17:21,568 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:17:23,570 basehttp "GET /admin/shop/news/ HTTP/1.1" 200 17976
+INFO 2026-05-21 06:17:23,600 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:17:30,970 basehttp "GET /admin/shop/news/1/change/ HTTP/1.1" 200 19000
+INFO 2026-05-21 06:17:30,995 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:17:39,856 basehttp "GET /admin/shop/news/ HTTP/1.1" 200 17976
+INFO 2026-05-21 06:17:41,653 basehttp "GET /admin/shop/news/4/change/ HTTP/1.1" 200 19294
+INFO 2026-05-21 06:17:41,681 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:17:45,502 basehttp "GET /admin/shop/news/ HTTP/1.1" 200 17976
+INFO 2026-05-21 06:17:47,149 basehttp "GET /admin/shop/news/3/change/ HTTP/1.1" 200 18982
+INFO 2026-05-21 06:17:47,178 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:17:49,192 basehttp "GET /admin/shop/news/ HTTP/1.1" 200 17976
+INFO 2026-05-21 06:17:51,774 basehttp "GET /admin/shop/pickuppoint/ HTTP/1.1" 200 16980
+INFO 2026-05-21 06:17:51,801 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:17:54,181 basehttp "GET /admin/shop/productingredient/ HTTP/1.1" 200 15106
+INFO 2026-05-21 06:17:54,210 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:17:56,323 basehttp "GET /admin/shop/product/ HTTP/1.1" 200 32521
+INFO 2026-05-21 06:17:56,358 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:18:08,874 basehttp "GET /admin/shop/promocode/ HTTP/1.1" 200 21870
+INFO 2026-05-21 06:18:08,900 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:18:31,844 basehttp "GET /admin/shop/review/ HTTP/1.1" 200 23922
+INFO 2026-05-21 06:18:31,875 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:18:46,756 basehttp "GET /admin/shop/vacancy/ HTTP/1.1" 200 17635
+INFO 2026-05-21 06:18:46,787 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:18:53,006 basehttp "GET /admin/shop/order/ HTTP/1.1" 200 27995
+INFO 2026-05-21 06:18:53,036 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:19:10,002 basehttp "GET /admin/shop/order/ HTTP/1.1" 200 27995
+INFO 2026-05-21 06:19:13,227 basehttp "POST /admin/logout/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:19:13,607 basehttp "GET / HTTP/1.1" 200 12086
+INFO 2026-05-21 06:19:15,852 basehttp "GET /login/ HTTP/1.1" 200 874
+INFO 2026-05-21 06:19:25,963 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:19:25,980 basehttp "GET /redirect-after-login/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:19:26,007 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 3583
+INFO 2026-05-21 06:19:28,887 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 3583
+INFO 2026-05-21 06:19:30,254 basehttp "GET /employee/clients/ HTTP/1.1" 200 849
+INFO 2026-05-21 06:19:35,379 basehttp "GET /admin/shop/order/add/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:19:35,418 basehttp "GET /admin/login/?next=/admin/shop/order/add/ HTTP/1.1" 200 3982
+INFO 2026-05-21 06:19:35,443 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2026-05-21 06:19:41,747 basehttp "POST /admin/login/?next=/admin/shop/order/add/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:19:41,818 basehttp "GET /admin/shop/order/add/ HTTP/1.1" 200 34820
+INFO 2026-05-21 06:19:41,856 basehttp "GET /static/admin/js/inlines.js HTTP/1.1" 200 15628
+INFO 2026-05-21 06:19:41,857 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:19:41,935 basehttp "GET /static/admin/img/inline-delete.svg HTTP/1.1" 200 537
+INFO 2026-05-21 06:19:51,278 basehttp "GET /static/admin/img/calendar-icons.svg HTTP/1.1" 200 2455
+INFO 2026-05-21 06:21:27,032 basehttp "POST /admin/shop/order/add/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:21:27,082 basehttp "GET /admin/shop/order/ HTTP/1.1" 200 28886
+INFO 2026-05-21 06:21:27,116 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:21:31,383 basehttp "GET /admin/shop/order/13/change/ HTTP/1.1" 200 42703
+INFO 2026-05-21 06:21:31,414 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:22:12,771 basehttp "GET /admin/shop/order/ HTTP/1.1" 200 28647
+INFO 2026-05-21 06:22:12,797 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:22:25,719 basehttp "GET /admin/shop/order/12/change/ HTTP/1.1" 200 42712
+INFO 2026-05-21 06:22:25,752 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:22:43,589 basehttp "GET /admin/shop/order/ HTTP/1.1" 200 28647
+INFO 2026-05-21 06:22:46,012 basehttp "GET /admin/shop/order/13/change/ HTTP/1.1" 200 42703
+INFO 2026-05-21 06:22:46,037 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:23:03,288 basehttp "GET /admin/shop/employee/ HTTP/1.1" 200 21616
+INFO 2026-05-21 06:23:03,315 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:23:05,249 basehttp "GET /admin/shop/employee/5/change/ HTTP/1.1" 200 23137
+INFO 2026-05-21 06:23:05,280 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:23:52,907 basehttp "POST /admin/shop/employee/5/change/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:23:52,955 basehttp "GET /admin/shop/employee/ HTTP/1.1" 200 21864
+INFO 2026-05-21 06:23:52,987 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:23:57,822 basehttp "GET /admin/shop/glossaryterm/ HTTP/1.1" 200 18734
+INFO 2026-05-21 06:23:57,850 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:23:59,358 basehttp "GET /admin/shop/client/ HTTP/1.1" 200 24875
+INFO 2026-05-21 06:23:59,389 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:24:06,602 basehttp "GET /admin/shop/order/ HTTP/1.1" 200 28647
+INFO 2026-05-21 06:24:06,633 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:24:11,471 basehttp "GET /admin/shop/order/13/change/ HTTP/1.1" 200 42703
+INFO 2026-05-21 06:24:11,499 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:24:21,514 basehttp "GET /admin/shop/order/13/delete/ HTTP/1.1" 200 15301
+INFO 2026-05-21 06:24:21,537 basehttp "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+INFO 2026-05-21 06:24:23,848 basehttp "POST /admin/shop/order/13/delete/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:24:23,898 basehttp "GET /admin/shop/order/ HTTP/1.1" 200 28191
+INFO 2026-05-21 06:24:23,926 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:24:53,063 basehttp "GET / HTTP/1.1" 200 12753
+INFO 2026-05-21 06:24:55,460 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:24:55,873 basehttp "GET / HTTP/1.1" 200 12002
+INFO 2026-05-21 06:24:57,365 basehttp "GET /login/ HTTP/1.1" 200 874
+INFO 2026-05-21 06:25:14,421 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:25:14,435 basehttp "GET /redirect-after-login/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:25:14,456 basehttp "GET /products/ HTTP/1.1" 200 5304
+INFO 2026-05-21 06:25:17,134 basehttp "GET / HTTP/1.1" 200 12755
+INFO 2026-05-21 06:25:23,807 basehttp "GET /orders/ HTTP/1.1" 200 957
+INFO 2026-05-21 06:25:27,594 basehttp "GET / HTTP/1.1" 200 12861
+INFO 2026-05-21 06:25:28,949 basehttp "GET /products/ HTTP/1.1" 200 5304
+INFO 2026-05-21 06:25:31,036 basehttp "GET /cart/add/8/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:25:31,059 basehttp "GET /products/ HTTP/1.1" 200 5304
+INFO 2026-05-21 06:25:34,135 basehttp "GET /cart/add/3/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:25:34,157 basehttp "GET /products/ HTTP/1.1" 200 5304
+INFO 2026-05-21 06:25:38,050 basehttp "GET /cart/add/13/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:25:38,074 basehttp "GET /products/ HTTP/1.1" 200 5304
+INFO 2026-05-21 06:25:40,507 basehttp "GET / HTTP/1.1" 200 12789
+INFO 2026-05-21 06:25:48,050 basehttp "GET /orders/ HTTP/1.1" 200 957
+INFO 2026-05-21 06:25:50,204 basehttp "GET /products/ HTTP/1.1" 200 5304
+INFO 2026-05-21 06:25:54,657 basehttp "GET /cart/add/8/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:25:54,683 basehttp "GET /products/ HTTP/1.1" 200 5304
+INFO 2026-05-21 06:25:58,513 basehttp "GET / HTTP/1.1" 200 12760
+INFO 2026-05-21 06:26:00,239 basehttp "GET / HTTP/1.1" 200 12722
+INFO 2026-05-21 06:26:11,910 basehttp "GET /pickup-points/ HTTP/1.1" 200 760
+INFO 2026-05-21 06:26:14,381 basehttp "GET / HTTP/1.1" 200 12841
+INFO 2026-05-21 06:28:07,843 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:28:08,250 basehttp "GET / HTTP/1.1" 200 12026
+INFO 2026-05-21 06:28:13,412 basehttp "GET /login/ HTTP/1.1" 200 874
+INFO 2026-05-21 06:28:23,622 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:28:23,635 basehttp "GET /redirect-after-login/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:28:23,658 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 3583
+INFO 2026-05-21 06:28:28,095 basehttp "GET /employee/clients/ HTTP/1.1" 200 849
+INFO 2026-05-21 06:28:29,729 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 3583
+INFO 2026-05-21 06:28:32,244 basehttp "GET / HTTP/1.1" 200 12898
+INFO 2026-05-21 06:28:36,212 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:28:36,590 basehttp "GET / HTTP/1.1" 200 12272
+INFO 2026-05-21 06:28:38,340 basehttp "GET /login/ HTTP/1.1" 200 874
+INFO 2026-05-21 06:28:44,492 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:28:44,504 basehttp "GET /redirect-after-login/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:28:44,542 basehttp "GET /admin/ HTTP/1.1" 200 20728
+INFO 2026-05-21 06:28:51,234 basehttp "GET /admin/shop/order/ HTTP/1.1" 200 27995
+INFO 2026-05-21 06:28:51,294 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:29:04,542 basehttp "GET /admin/shop/order/add/ HTTP/1.1" 200 34820
+INFO 2026-05-21 06:29:04,590 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:29:42,745 basehttp "POST /admin/shop/order/add/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:29:42,792 basehttp "GET /admin/shop/order/ HTTP/1.1" 200 28874
+INFO 2026-05-21 06:29:42,848 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:29:47,366 basehttp "GET /admin/shop/order/14/change/ HTTP/1.1" 200 38946
+INFO 2026-05-21 06:29:47,411 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:33:14,646 autoreload D:\453502\IGI_LR5\shop\views.py changed, reloading.
+INFO 2026-05-21 06:33:16,411 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 06:33:44,286 autoreload D:\453502\IGI_LR5\shop\models.py changed, reloading.
+INFO 2026-05-21 06:33:45,740 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 06:33:49,765 autoreload D:\453502\IGI_LR5\shop\models.py changed, reloading.
+INFO 2026-05-21 06:33:51,048 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 06:36:08,789 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 06:36:13,408 basehttp "GET / HTTP/1.1" 200 12369
+INFO 2026-05-21 06:36:17,255 basehttp "GET /admin/ HTTP/1.1" 200 20195
+INFO 2026-05-21 06:36:20,439 basehttp "GET /admin/shop/order/14/change/ HTTP/1.1" 200 38946
+INFO 2026-05-21 06:36:20,502 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:36:20,725 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 200 8525
+INFO 2026-05-21 06:36:20,729 basehttp "GET /static/admin/js/inlines.js HTTP/1.1" 200 15628
+INFO 2026-05-21 06:36:20,753 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 200 11973
+INFO 2026-05-21 06:36:20,753 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2026-05-21 06:36:20,760 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2026-05-21 06:36:20,761 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2026-05-21 06:36:20,762 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2026-05-21 06:36:20,762 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2026-05-21 06:36:20,761 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2026-05-21 06:36:20,766 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2026-05-21 06:36:20,767 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2026-05-21 06:36:20,769 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2026-05-21 06:36:20,781 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2026-05-21 06:36:20,791 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2026-05-21 06:36:20,862 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2026-05-21 06:36:20,870 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2026-05-21 06:36:21,003 basehttp "GET /static/admin/img/inline-delete.svg HTTP/1.1" 200 537
+INFO 2026-05-21 06:36:21,020 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2026-05-21 06:36:29,370 basehttp "GET /admin/shop/order/14/delete/ HTTP/1.1" 200 15244
+INFO 2026-05-21 06:36:29,393 basehttp "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+INFO 2026-05-21 06:36:31,380 basehttp "POST /admin/shop/order/14/delete/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:36:31,449 basehttp "GET /admin/shop/order/ HTTP/1.1" 200 28187
+INFO 2026-05-21 06:36:31,472 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2026-05-21 06:36:31,473 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:36:31,474 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2026-05-21 06:36:31,490 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2026-05-21 06:36:31,509 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2026-05-21 06:36:31,510 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2026-05-21 06:36:44,040 basehttp "GET /admin/shop/order/add/ HTTP/1.1" 200 34820
+INFO 2026-05-21 06:36:44,063 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:37:53,999 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 06:37:57,309 basehttp "GET / HTTP/1.1" 200 12463
+INFO 2026-05-21 06:38:05,145 basehttp "GET /contacts/ HTTP/1.1" 200 2908
+INFO 2026-05-21 06:38:05,243 basehttp "GET /media/employees/sotr.jpg HTTP/1.1" 200 35065
+INFO 2026-05-21 06:38:07,744 basehttp "GET / HTTP/1.1" 200 12403
+INFO 2026-05-21 06:38:09,750 basehttp "GET / HTTP/1.1" 200 12375
+INFO 2026-05-21 06:38:10,612 basehttp "GET /products/ HTTP/1.1" 200 5304
+INFO 2026-05-21 06:38:12,401 basehttp "GET /cart/add/8/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:38:12,417 basehttp "GET /products/ HTTP/1.1" 200 5304
+INFO 2026-05-21 06:38:15,073 basehttp "GET /cart/add/8/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:38:15,097 basehttp "GET /products/ HTTP/1.1" 200 5304
+INFO 2026-05-21 06:38:23,565 basehttp "GET / HTTP/1.1" 200 12436
+INFO 2026-05-21 06:38:29,495 basehttp "GET /admin/ HTTP/1.1" 200 20445
+INFO 2026-05-21 06:38:35,314 basehttp "GET /admin/shop/order/ HTTP/1.1" 200 27995
+INFO 2026-05-21 06:38:35,338 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:38:39,942 basehttp "GET /admin/shop/order/add/ HTTP/1.1" 200 34820
+INFO 2026-05-21 06:38:39,969 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:40:29,557 basehttp "POST /admin/shop/order/add/ HTTP/1.1" 200 35165
+INFO 2026-05-21 06:40:29,583 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:40:40,616 basehttp "POST /admin/shop/order/add/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:40:40,655 basehttp "GET /admin/shop/order/ HTTP/1.1" 200 28874
+INFO 2026-05-21 06:40:40,682 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:44:22,354 autoreload D:\453502\IGI_LR5\shop\views.py changed, reloading.
+INFO 2026-05-21 06:44:23,692 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 06:47:01,150 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 06:47:09,040 basehttp "GET / HTTP/1.1" 200 12427
+INFO 2026-05-21 06:47:20,862 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:47:21,199 basehttp "GET / HTTP/1.1" 200 12081
+INFO 2026-05-21 06:47:25,422 basehttp "GET /login/ HTTP/1.1" 200 874
+INFO 2026-05-21 06:48:33,283 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:48:33,292 basehttp "GET /redirect-after-login/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:48:33,308 basehttp "GET /products/ HTTP/1.1" 200 5304
+INFO 2026-05-21 06:48:36,016 basehttp "GET / HTTP/1.1" 200 12762
+INFO 2026-05-21 06:48:42,217 basehttp "GET /products/ HTTP/1.1" 200 5304
+INFO 2026-05-21 06:49:55,352 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 06:49:58,541 basehttp "GET / HTTP/1.1" 200 12816
+INFO 2026-05-21 06:50:01,270 basehttp "GET /cart/ HTTP/1.1" 200 853
+INFO 2026-05-21 06:50:03,433 basehttp "GET / HTTP/1.1" 200 12946
+INFO 2026-05-21 06:50:04,689 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:50:05,088 basehttp "GET / HTTP/1.1" 200 12086
+INFO 2026-05-21 06:50:09,952 basehttp "GET /cart/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:50:09,977 basehttp "GET /login/?next=/cart/ HTTP/1.1" 200 874
+INFO 2026-05-21 06:50:24,092 basehttp "POST /login/?next=/cart/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:50:24,099 basehttp "GET /cart/ HTTP/1.1" 200 853
+INFO 2026-05-21 06:50:26,207 basehttp "GET / HTTP/1.1" 200 12861
+INFO 2026-05-21 06:50:28,034 basehttp "GET /products/ HTTP/1.1" 200 5304
+INFO 2026-05-21 06:50:30,044 basehttp "GET /cart/add/8/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:50:30,062 basehttp "GET /products/ HTTP/1.1" 200 5304
+INFO 2026-05-21 06:50:32,725 basehttp "GET /cart/add/12/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:50:32,739 basehttp "GET /products/ HTTP/1.1" 200 5304
+INFO 2026-05-21 06:50:35,529 basehttp "GET /cart/add/10/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:50:35,548 basehttp "GET /products/ HTTP/1.1" 200 5304
+INFO 2026-05-21 06:50:37,494 basehttp "GET / HTTP/1.1" 200 12831
+INFO 2026-05-21 06:50:38,924 basehttp "GET /cart/ HTTP/1.1" 200 3389
+INFO 2026-05-21 06:50:41,700 basehttp "POST /cart/update/8/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:50:41,718 basehttp "GET /cart/ HTTP/1.1" 200 3389
+INFO 2026-05-21 06:50:47,549 basehttp "GET /order/create/ HTTP/1.1" 200 2058
+ERROR 2026-05-21 06:51:13,831 log Internal Server Error: /order/create/
+Traceback (most recent call last):
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\453502\IGI_LR5\shop\views.py", line 238, in order_create
+    order = Order.objects.create(
+        client=request.user.client,
+    ...<3 lines>...
+        status='pending'
+    )
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\db\models\query.py", line 665, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\453502\IGI_LR5\shop\models.py", line 149, in save
+    self.total_amount = self.calculate_total()
+                        ~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\453502\IGI_LR5\shop\models.py", line 143, in calculate_total
+    total = sum(item.subtotal() for item in self.items.all())
+                                            ~~~~~~~~~~~~~~^^
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\db\models\manager.py", line 164, in all
+    return self.get_queryset()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\db\models\fields\related_descriptors.py", line 760, in get_queryset
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: 'Order' instance needs to have a primary key value before this relationship can be used.
+ERROR 2026-05-21 06:51:13,840 basehttp "POST /order/create/ HTTP/1.1" 500 100743
+INFO 2026-05-21 06:51:39,733 basehttp "GET /order/create/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:51:40,230 basehttp "GET / HTTP/1.1" 200 12547
+WARNING 2026-05-21 06:51:40,857 log Not Found: /favicon.ico
+WARNING 2026-05-21 06:51:40,858 basehttp "GET /favicon.ico HTTP/1.1" 404 9752
+INFO 2026-05-21 06:51:52,353 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:51:52,719 basehttp "GET / HTTP/1.1" 200 12082
+INFO 2026-05-21 06:51:54,825 basehttp "GET /login/ HTTP/1.1" 200 874
+INFO 2026-05-21 06:52:09,583 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:52:09,597 basehttp "GET /redirect-after-login/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:52:09,613 basehttp "GET /products/ HTTP/1.1" 200 5304
+INFO 2026-05-21 06:52:15,664 basehttp "GET / HTTP/1.1" 200 12974
+INFO 2026-05-21 06:52:17,040 basehttp "GET /cart/ HTTP/1.1" 200 853
+INFO 2026-05-21 06:52:18,892 basehttp "GET /products/ HTTP/1.1" 200 5304
+INFO 2026-05-21 06:52:20,613 basehttp "GET /cart/add/8/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:52:20,641 basehttp "GET /products/ HTTP/1.1" 200 5304
+INFO 2026-05-21 06:52:22,197 basehttp "GET /cart/add/5/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:52:22,221 basehttp "GET /products/ HTTP/1.1" 200 5304
+INFO 2026-05-21 06:52:24,068 basehttp "GET /cart/add/12/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:52:24,093 basehttp "GET /products/ HTTP/1.1" 200 5304
+INFO 2026-05-21 06:52:26,913 basehttp "GET / HTTP/1.1" 200 12799
+INFO 2026-05-21 06:52:28,146 basehttp "GET /cart/ HTTP/1.1" 200 3387
+INFO 2026-05-21 06:52:32,863 basehttp "GET /order/create/ HTTP/1.1" 200 2058
+ERROR 2026-05-21 06:52:48,711 log Internal Server Error: /order/create/
+Traceback (most recent call last):
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\453502\IGI_LR5\shop\views.py", line 238, in order_create
+    order = Order.objects.create(
+        client=request.user.client,
+    ...<3 lines>...
+        status='pending'
+    )
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\db\models\query.py", line 665, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\453502\IGI_LR5\shop\models.py", line 149, in save
+    self.total_amount = self.calculate_total()
+                        ~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\453502\IGI_LR5\shop\models.py", line 143, in calculate_total
+    total = sum(item.subtotal() for item in self.items.all())
+                                            ~~~~~~~~~~~~~~^^
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\db\models\manager.py", line 164, in all
+    return self.get_queryset()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\db\models\fields\related_descriptors.py", line 760, in get_queryset
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: 'Order' instance needs to have a primary key value before this relationship can be used.
+ERROR 2026-05-21 06:52:48,716 basehttp "POST /order/create/ HTTP/1.1" 500 101365
+INFO 2026-05-21 06:54:03,054 autoreload D:\453502\IGI_LR5\shop\models.py changed, reloading.
+INFO 2026-05-21 06:54:04,281 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 06:54:12,634 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 06:54:15,721 basehttp "GET / HTTP/1.1" 200 12848
+INFO 2026-05-21 06:54:20,303 basehttp "GET /cart/ HTTP/1.1" 200 3389
+INFO 2026-05-21 06:54:22,401 basehttp "GET /order/create/ HTTP/1.1" 200 2058
+INFO 2026-05-21 06:54:33,565 basehttp "POST /order/create/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:54:33,582 basehttp "GET /orders/ HTTP/1.1" 200 1624
+INFO 2026-05-21 06:54:51,186 basehttp "GET / HTTP/1.1" 200 12934
+INFO 2026-05-21 06:54:52,858 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:54:53,198 basehttp "GET / HTTP/1.1" 200 12133
+INFO 2026-05-21 06:54:54,959 basehttp "GET /login/ HTTP/1.1" 200 874
+INFO 2026-05-21 06:55:07,413 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:55:07,422 basehttp "GET /redirect-after-login/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:55:07,437 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 3583
+INFO 2026-05-21 06:55:11,384 basehttp "GET /employee/clients/ HTTP/1.1" 200 849
+INFO 2026-05-21 06:55:13,198 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 3583
+INFO 2026-05-21 06:55:15,857 basehttp "GET / HTTP/1.1" 200 12846
+INFO 2026-05-21 06:55:18,198 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 3583
+INFO 2026-05-21 06:55:32,365 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:55:32,562 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:55:32,742 basehttp - Broken pipe from ('127.0.0.1', 55998)
+INFO 2026-05-21 06:55:32,926 basehttp "GET / HTTP/1.1" 200 12113
+INFO 2026-05-21 06:55:34,891 basehttp "GET /login/ HTTP/1.1" 200 874
+INFO 2026-05-21 06:55:41,028 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:55:41,039 basehttp "GET /redirect-after-login/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:55:41,104 basehttp "GET /admin/ HTTP/1.1" 200 20759
+INFO 2026-05-21 06:55:47,621 basehttp "GET /admin/shop/order/ HTTP/1.1" 200 29268
+INFO 2026-05-21 06:55:47,653 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:55:55,998 basehttp "GET /admin/shop/order/15/change/ HTTP/1.1" 200 38945
+INFO 2026-05-21 06:55:56,023 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:56:00,178 basehttp "GET /admin/shop/order/15/delete/ HTTP/1.1" 200 15244
+INFO 2026-05-21 06:56:01,531 basehttp "POST /admin/shop/order/15/delete/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:56:01,568 basehttp "GET /admin/shop/order/ HTTP/1.1" 200 28816
+INFO 2026-05-21 06:56:01,590 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:56:10,505 basehttp "GET /admin/shop/order/16/change/ HTTP/1.1" 200 46421
+INFO 2026-05-21 06:56:10,529 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:56:14,409 basehttp "POST /admin/shop/order/16/change/ HTTP/1.1" 302 0
+INFO 2026-05-21 06:56:14,463 basehttp "GET /admin/shop/order/ HTTP/1.1" 200 28878
+INFO 2026-05-21 06:56:14,493 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:56:24,534 basehttp "GET /admin/shop/order/16/change/ HTTP/1.1" 200 46440
+INFO 2026-05-21 06:56:24,556 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:57:42,714 basehttp "GET /admin/shop/employee/ HTTP/1.1" 200 21616
+INFO 2026-05-21 06:57:42,749 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:57:48,234 basehttp "GET /admin/shop/employee/5/change/ HTTP/1.1" 200 23436
+INFO 2026-05-21 06:57:48,265 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:58:37,551 basehttp "GET /admin/shop/employee/ HTTP/1.1" 200 21616
+INFO 2026-05-21 06:58:37,581 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 06:58:42,013 basehttp "GET /admin/shop/employee/5/change/ HTTP/1.1" 200 23436
+INFO 2026-05-21 06:58:42,037 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 07:00:30,557 autoreload D:\453502\IGI_LR5\shop\admin.py changed, reloading.
+INFO 2026-05-21 07:00:31,991 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 07:00:46,595 autoreload D:\453502\IGI_LR5\shop\admin.py changed, reloading.
+INFO 2026-05-21 07:00:47,874 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 07:00:51,875 autoreload D:\453502\IGI_LR5\shop\admin.py changed, reloading.
+INFO 2026-05-21 07:00:53,044 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 07:01:05,313 autoreload D:\453502\IGI_LR5\shop\admin.py changed, reloading.
+INFO 2026-05-21 07:01:06,338 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 07:01:40,261 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 07:01:46,277 basehttp "GET / HTTP/1.1" 200 12485
+INFO 2026-05-21 07:01:51,181 basehttp "GET /admin/ HTTP/1.1" 200 20183
+INFO 2026-05-21 07:01:53,819 basehttp "GET /admin/shop/order/16/change/ HTTP/1.1" 200 49038
+INFO 2026-05-21 07:01:53,852 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 07:02:13,719 basehttp "POST /admin/shop/order/16/change/ HTTP/1.1" 302 0
+INFO 2026-05-21 07:02:13,829 basehttp "GET /admin/shop/order/ HTTP/1.1" 200 64066
+INFO 2026-05-21 07:02:13,858 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 07:02:18,501 basehttp "POST /admin/logout/ HTTP/1.1" 302 0
+INFO 2026-05-21 07:02:18,868 basehttp "GET / HTTP/1.1" 200 12116
+INFO 2026-05-21 07:02:20,416 basehttp "GET /login/ HTTP/1.1" 200 874
+INFO 2026-05-21 07:02:28,882 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-05-21 07:02:28,891 basehttp "GET /redirect-after-login/ HTTP/1.1" 302 0
+INFO 2026-05-21 07:02:28,909 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 3938
+INFO 2026-05-21 07:02:32,627 basehttp "GET /employee/order/16/ HTTP/1.1" 200 2714
+INFO 2026-05-21 07:02:35,206 basehttp "POST /employee/order/16/ HTTP/1.1" 200 2714
+INFO 2026-05-21 07:02:38,191 basehttp "POST /employee/order/16/ HTTP/1.1" 200 2714
+INFO 2026-05-21 07:02:43,201 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 3941
+INFO 2026-05-21 07:02:44,954 basehttp "GET /employee/clients/ HTTP/1.1" 200 1020
+INFO 2026-05-21 07:02:48,130 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 3941
+INFO 2026-05-21 07:03:01,872 autoreload D:\453502\IGI_LR5\shop\admin.py changed, reloading.
+INFO 2026-05-21 07:03:03,143 autoreload Watching for file changes with StatReloader
+WARNING 2026-05-21 07:07:17,449 log Not Found: /employee/order/99999/
+INFO 2026-05-21 07:08:06,025 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 07:08:09,585 basehttp "GET / HTTP/1.1" 200 12927
+INFO 2026-05-21 07:08:12,598 basehttp "GET /contacts/ HTTP/1.1" 200 2908
+INFO 2026-05-21 07:08:12,618 basehttp "GET /media/employees/sotr.jpg HTTP/1.1" 304 0
+INFO 2026-05-21 07:08:23,563 basehttp "GET / HTTP/1.1" 200 12835
+INFO 2026-05-21 07:08:26,674 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-05-21 07:08:27,068 basehttp "GET / HTTP/1.1" 200 12116
+INFO 2026-05-21 07:08:28,830 basehttp "GET /login/ HTTP/1.1" 200 874
+INFO 2026-05-21 07:08:34,589 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-05-21 07:08:34,595 basehttp "GET /redirect-after-login/ HTTP/1.1" 302 0
+INFO 2026-05-21 07:08:34,645 basehttp "GET /admin/ HTTP/1.1" 200 20389
+INFO 2026-05-21 07:08:38,644 basehttp "GET /admin/shop/employee/ HTTP/1.1" 200 21616
+INFO 2026-05-21 07:08:38,669 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 07:08:40,517 basehttp "GET /admin/shop/employee/4/change/ HTTP/1.1" 200 23226
+INFO 2026-05-21 07:08:40,539 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 07:08:46,909 basehttp "GET / HTTP/1.1" 200 12538
+INFO 2026-05-21 07:08:50,078 basehttp "GET /statistics/ HTTP/1.1" 200 14707
+INFO 2026-05-21 11:05:09,805 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 11:05:13,035 basehttp "GET / HTTP/1.1" 200 12456
+INFO 2026-05-21 11:05:14,870 basehttp "GET /cart/ HTTP/1.1" 200 853
+INFO 2026-05-21 11:05:16,897 basehttp "GET / HTTP/1.1" 200 12505
+INFO 2026-05-21 11:05:18,536 basehttp "GET /admin/ HTTP/1.1" 200 20150
+INFO 2026-05-21 11:05:23,840 basehttp "GET /admin/shop/order/ HTTP/1.1" 200 63829
+INFO 2026-05-21 11:05:23,859 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 11:05:40,097 basehttp "POST /admin/shop/order/ HTTP/1.1" 200 65618
+INFO 2026-05-21 11:05:40,111 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 11:06:14,142 basehttp "POST /admin/shop/order/ HTTP/1.1" 302 0
+INFO 2026-05-21 11:06:14,232 basehttp "GET /admin/shop/order/ HTTP/1.1" 200 63986
+INFO 2026-05-21 11:06:14,246 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 11:06:18,047 basehttp "GET / HTTP/1.1" 200 12504
+INFO 2026-05-21 11:06:19,608 basehttp "GET /reviews/ HTTP/1.1" 200 6698
+INFO 2026-05-21 11:06:27,844 basehttp "GET / HTTP/1.1" 200 12527
+INFO 2026-05-21 11:54:50,606 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 11:55:01,301 basehttp "GET / HTTP/1.1" 200 12552
+INFO 2026-05-21 11:55:04,536 basehttp "GET / HTTP/1.1" 200 12445
+INFO 2026-05-21 11:55:05,189 basehttp "GET /products/ HTTP/1.1" 200 5304
+INFO 2026-05-21 11:55:08,006 basehttp "GET / HTTP/1.1" 200 12505
+INFO 2026-05-21 11:55:18,385 basehttp "GET /reviews/ HTTP/1.1" 200 6698
+INFO 2026-05-21 11:55:21,173 basehttp "GET / HTTP/1.1" 200 12514
+INFO 2026-05-21 11:55:23,621 basehttp "GET /admin/ HTTP/1.1" 200 20301
+INFO 2026-05-21 11:55:32,427 basehttp "POST /admin/logout/ HTTP/1.1" 302 0
+INFO 2026-05-21 11:55:33,005 basehttp "GET / HTTP/1.1" 200 12080
+INFO 2026-05-21 11:55:34,903 basehttp "GET /login/ HTTP/1.1" 200 874
+INFO 2026-05-21 11:55:50,257 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-05-21 11:55:50,267 basehttp "GET /redirect-after-login/ HTTP/1.1" 302 0
+INFO 2026-05-21 11:55:50,299 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 7559
+INFO 2026-05-21 11:55:55,663 basehttp "GET /employee/order/10/ HTTP/1.1" 200 2901
+INFO 2026-05-21 11:55:58,337 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 7559
+INFO 2026-05-21 11:56:01,361 basehttp "GET /employee/clients/ HTTP/1.1" 200 2046
+INFO 2026-05-21 11:56:11,358 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 7559
+INFO 2026-05-21 11:56:14,709 basehttp "GET / HTTP/1.1" 200 12861
+INFO 2026-05-21 11:56:18,014 basehttp "GET /statistics/ HTTP/1.1" 200 14707
+INFO 2026-05-21 11:56:35,032 basehttp "GET / HTTP/1.1" 200 12819
+WARNING 2026-05-21 11:58:07,099 log Not Found: /employee/order/99999/
+INFO 2026-05-21 13:19:06,615 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 13:19:51,662 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 13:21:01,343 autoreload D:\453502\IGI_LR5\confectionery\settings.py changed, reloading.
+INFO 2026-05-21 13:21:02,702 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 13:21:08,925 autoreload D:\453502\IGI_LR5\confectionery\settings.py changed, reloading.
+INFO 2026-05-21 13:21:10,369 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 13:21:23,169 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 13:21:58,113 autoreload D:\453502\IGI_LR5\confectionery\settings.py changed, reloading.
+INFO 2026-05-21 13:21:59,752 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 13:22:06,017 autoreload D:\453502\IGI_LR5\confectionery\settings.py changed, reloading.
+INFO 2026-05-21 13:22:07,444 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 13:22:13,572 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 13:22:16,616 basehttp "GET / HTTP/1.1" 200 12755
+INFO 2026-05-21 13:22:21,384 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-05-21 13:22:22,024 basehttp "GET / HTTP/1.1" 200 12056
+INFO 2026-05-21 13:22:23,323 basehttp "GET /login/ HTTP/1.1" 200 874
+INFO 2026-05-21 13:22:29,306 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-05-21 13:22:29,316 basehttp "GET /redirect-after-login/ HTTP/1.1" 302 0
+INFO 2026-05-21 13:22:29,387 basehttp "GET /admin/ HTTP/1.1" 200 20301
+INFO 2026-05-21 13:22:33,251 basehttp "GET / HTTP/1.1" 200 12487
+INFO 2026-05-21 13:22:36,001 basehttp "GET /statistics/ HTTP/1.1" 200 14707
+INFO 2026-05-21 13:22:40,645 basehttp "GET / HTTP/1.1" 200 12452
+INFO 2026-05-21 13:55:08,888 autoreload Watching for file changes with StatReloader
+ERROR 2026-05-21 13:55:11,220 services Ошибка получения факта: HTTPSConnectionPool(host='uselessfacts.jsph.pl', port=443): Max retries exceeded with url: /random.json?language=en (Caused by NameResolutionError("HTTPSConnection(host='uselessfacts.jsph.pl', port=443): Failed to resolve 'uselessfacts.jsph.pl' ([Errno 11001] getaddrinfo failed)"))
+ERROR 2026-05-21 13:55:11,223 services Ошибка получения шутки: HTTPSConnectionPool(host='v2.jokeapi.dev', port=443): Max retries exceeded with url: /joke/Any?safe-mode (Caused by NameResolutionError("HTTPSConnection(host='v2.jokeapi.dev', port=443): Failed to resolve 'v2.jokeapi.dev' ([Errno 11001] getaddrinfo failed)"))
+INFO 2026-05-21 13:55:11,259 basehttp "GET / HTTP/1.1" 200 12688
+INFO 2026-05-21 13:55:25,837 basehttp "GET /products/ HTTP/1.1" 200 5304
+INFO 2026-05-21 13:55:31,525 basehttp "GET /products/?search=&sort=price_asc HTTP/1.1" 200 5334
+INFO 2026-05-21 13:55:36,492 basehttp "GET /products/?search=%D0%9A%D0%B0%D1%80%D1%82%D0%BE%D1%88%D0%BA%D0%B0&sort=price_asc HTTP/1.1" 200 1676
+ERROR 2026-05-21 13:55:38,425 services Ошибка получения факта: HTTPSConnectionPool(host='uselessfacts.jsph.pl', port=443): Max retries exceeded with url: /random.json?language=en (Caused by NameResolutionError("HTTPSConnection(host='uselessfacts.jsph.pl', port=443): Failed to resolve 'uselessfacts.jsph.pl' ([Errno 11001] getaddrinfo failed)"))
+ERROR 2026-05-21 13:55:38,428 services Ошибка получения шутки: HTTPSConnectionPool(host='v2.jokeapi.dev', port=443): Max retries exceeded with url: /joke/Any?safe-mode (Caused by NameResolutionError("HTTPSConnection(host='v2.jokeapi.dev', port=443): Failed to resolve 'v2.jokeapi.dev' ([Errno 11001] getaddrinfo failed)"))
+INFO 2026-05-21 13:55:38,436 basehttp "GET / HTTP/1.1" 200 12688
+INFO 2026-05-21 13:55:39,477 basehttp "GET /cart/ HTTP/1.1" 200 853
+ERROR 2026-05-21 13:55:41,944 services Ошибка получения факта: HTTPSConnectionPool(host='uselessfacts.jsph.pl', port=443): Max retries exceeded with url: /random.json?language=en (Caused by NameResolutionError("HTTPSConnection(host='uselessfacts.jsph.pl', port=443): Failed to resolve 'uselessfacts.jsph.pl' ([Errno 11001] getaddrinfo failed)"))
+ERROR 2026-05-21 13:55:41,947 services Ошибка получения шутки: HTTPSConnectionPool(host='v2.jokeapi.dev', port=443): Max retries exceeded with url: /joke/Any?safe-mode (Caused by NameResolutionError("HTTPSConnection(host='v2.jokeapi.dev', port=443): Failed to resolve 'v2.jokeapi.dev' ([Errno 11001] getaddrinfo failed)"))
+INFO 2026-05-21 13:55:41,958 basehttp "GET / HTTP/1.1" 200 12688
+INFO 2026-05-21 13:55:43,167 basehttp "GET /reviews/ HTTP/1.1" 200 6698
+ERROR 2026-05-21 13:55:45,816 services Ошибка получения факта: HTTPSConnectionPool(host='uselessfacts.jsph.pl', port=443): Max retries exceeded with url: /random.json?language=en (Caused by NameResolutionError("HTTPSConnection(host='uselessfacts.jsph.pl', port=443): Failed to resolve 'uselessfacts.jsph.pl' ([Errno 11001] getaddrinfo failed)"))
+ERROR 2026-05-21 13:55:45,821 services Ошибка получения шутки: HTTPSConnectionPool(host='v2.jokeapi.dev', port=443): Max retries exceeded with url: /joke/Any?safe-mode (Caused by NameResolutionError("HTTPSConnection(host='v2.jokeapi.dev', port=443): Failed to resolve 'v2.jokeapi.dev' ([Errno 11001] getaddrinfo failed)"))
+INFO 2026-05-21 13:55:45,832 basehttp "GET / HTTP/1.1" 200 12688
+INFO 2026-05-21 13:55:47,190 basehttp "GET /promocodes/ HTTP/1.1" 200 1619
+ERROR 2026-05-21 13:55:49,244 services Ошибка получения факта: HTTPSConnectionPool(host='uselessfacts.jsph.pl', port=443): Max retries exceeded with url: /random.json?language=en (Caused by NameResolutionError("HTTPSConnection(host='uselessfacts.jsph.pl', port=443): Failed to resolve 'uselessfacts.jsph.pl' ([Errno 11001] getaddrinfo failed)"))
+ERROR 2026-05-21 13:55:49,249 services Ошибка получения шутки: HTTPSConnectionPool(host='v2.jokeapi.dev', port=443): Max retries exceeded with url: /joke/Any?safe-mode (Caused by NameResolutionError("HTTPSConnection(host='v2.jokeapi.dev', port=443): Failed to resolve 'v2.jokeapi.dev' ([Errno 11001] getaddrinfo failed)"))
+INFO 2026-05-21 13:55:49,259 basehttp "GET / HTTP/1.1" 200 12688
+INFO 2026-05-21 13:55:54,041 basehttp "GET /contacts/ HTTP/1.1" 200 2908
+INFO 2026-05-21 13:55:54,062 basehttp "GET /media/employees/sotr.jpg HTTP/1.1" 304 0
+ERROR 2026-05-21 13:55:58,262 services Ошибка получения факта: HTTPSConnectionPool(host='uselessfacts.jsph.pl', port=443): Max retries exceeded with url: /random.json?language=en (Caused by NameResolutionError("HTTPSConnection(host='uselessfacts.jsph.pl', port=443): Failed to resolve 'uselessfacts.jsph.pl' ([Errno 11001] getaddrinfo failed)"))
+ERROR 2026-05-21 13:55:58,268 services Ошибка получения шутки: HTTPSConnectionPool(host='v2.jokeapi.dev', port=443): Max retries exceeded with url: /joke/Any?safe-mode (Caused by NameResolutionError("HTTPSConnection(host='v2.jokeapi.dev', port=443): Failed to resolve 'v2.jokeapi.dev' ([Errno 11001] getaddrinfo failed)"))
+INFO 2026-05-21 13:55:58,279 basehttp "GET / HTTP/1.1" 200 12688
+INFO 2026-05-21 13:56:01,089 basehttp "GET /news/ HTTP/1.1" 200 1924
+INFO 2026-05-21 13:56:01,110 basehttp "GET /media/news/%D0%BA%D1%83%D0%BB.jpg HTTP/1.1" 304 0
+ERROR 2026-05-21 13:56:03,347 services Ошибка получения факта: HTTPSConnectionPool(host='uselessfacts.jsph.pl', port=443): Max retries exceeded with url: /random.json?language=en (Caused by NameResolutionError("HTTPSConnection(host='uselessfacts.jsph.pl', port=443): Failed to resolve 'uselessfacts.jsph.pl' ([Errno 11001] getaddrinfo failed)"))
+ERROR 2026-05-21 13:56:03,352 services Ошибка получения шутки: HTTPSConnectionPool(host='v2.jokeapi.dev', port=443): Max retries exceeded with url: /joke/Any?safe-mode (Caused by NameResolutionError("HTTPSConnection(host='v2.jokeapi.dev', port=443): Failed to resolve 'v2.jokeapi.dev' ([Errno 11001] getaddrinfo failed)"))
+INFO 2026-05-21 13:56:03,362 basehttp "GET / HTTP/1.1" 200 12688
+INFO 2026-05-21 13:56:05,170 basehttp "GET /admin/ HTTP/1.1" 200 20301
+ERROR 2026-05-21 13:56:12,571 services Ошибка получения факта: HTTPSConnectionPool(host='uselessfacts.jsph.pl', port=443): Max retries exceeded with url: /random.json?language=en (Caused by NameResolutionError("HTTPSConnection(host='uselessfacts.jsph.pl', port=443): Failed to resolve 'uselessfacts.jsph.pl' ([Errno 11001] getaddrinfo failed)"))
+ERROR 2026-05-21 13:56:12,575 services Ошибка получения шутки: HTTPSConnectionPool(host='v2.jokeapi.dev', port=443): Max retries exceeded with url: /joke/Any?safe-mode (Caused by NameResolutionError("HTTPSConnection(host='v2.jokeapi.dev', port=443): Failed to resolve 'v2.jokeapi.dev' ([Errno 11001] getaddrinfo failed)"))
+INFO 2026-05-21 13:56:12,584 basehttp "GET / HTTP/1.1" 200 12688
+INFO 2026-05-21 13:56:18,944 basehttp "POST /logout/ HTTP/1.1" 302 0
+ERROR 2026-05-21 13:56:18,992 services Ошибка получения факта: HTTPSConnectionPool(host='uselessfacts.jsph.pl', port=443): Max retries exceeded with url: /random.json?language=en (Caused by NameResolutionError("HTTPSConnection(host='uselessfacts.jsph.pl', port=443): Failed to resolve 'uselessfacts.jsph.pl' ([Errno 11001] getaddrinfo failed)"))
+ERROR 2026-05-21 13:56:18,995 services Ошибка получения шутки: HTTPSConnectionPool(host='v2.jokeapi.dev', port=443): Max retries exceeded with url: /joke/Any?safe-mode (Caused by NameResolutionError("HTTPSConnection(host='v2.jokeapi.dev', port=443): Failed to resolve 'v2.jokeapi.dev' ([Errno 11001] getaddrinfo failed)"))
+INFO 2026-05-21 13:56:18,998 basehttp "GET / HTTP/1.1" 200 12179
+INFO 2026-05-21 13:56:20,455 basehttp "GET /login/ HTTP/1.1" 200 874
+INFO 2026-05-21 13:56:39,883 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-05-21 13:56:39,894 basehttp "GET /redirect-after-login/ HTTP/1.1" 302 0
+INFO 2026-05-21 13:56:39,930 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 7559
+INFO 2026-05-21 13:57:14,707 basehttp "GET /employee/clients/ HTTP/1.1" 200 2046
+INFO 2026-05-21 13:57:16,550 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 7559
+ERROR 2026-05-21 13:57:19,882 services Ошибка получения факта: HTTPSConnectionPool(host='uselessfacts.jsph.pl', port=443): Max retries exceeded with url: /random.json?language=en (Caused by NameResolutionError("HTTPSConnection(host='uselessfacts.jsph.pl', port=443): Failed to resolve 'uselessfacts.jsph.pl' ([Errno 11001] getaddrinfo failed)"))
+ERROR 2026-05-21 13:57:19,885 services Ошибка получения шутки: HTTPSConnectionPool(host='v2.jokeapi.dev', port=443): Max retries exceeded with url: /joke/Any?safe-mode (Caused by NameResolutionError("HTTPSConnection(host='v2.jokeapi.dev', port=443): Failed to resolve 'v2.jokeapi.dev' ([Errno 11001] getaddrinfo failed)"))
+INFO 2026-05-21 13:57:19,894 basehttp "GET / HTTP/1.1" 200 12920
+INFO 2026-05-21 13:57:21,532 basehttp "POST /logout/ HTTP/1.1" 302 0
+ERROR 2026-05-21 13:57:21,545 services Ошибка получения факта: HTTPSConnectionPool(host='uselessfacts.jsph.pl', port=443): Max retries exceeded with url: /random.json?language=en (Caused by NameResolutionError("HTTPSConnection(host='uselessfacts.jsph.pl', port=443): Failed to resolve 'uselessfacts.jsph.pl' ([Errno 11001] getaddrinfo failed)"))
+ERROR 2026-05-21 13:57:21,549 services Ошибка получения шутки: HTTPSConnectionPool(host='v2.jokeapi.dev', port=443): Max retries exceeded with url: /joke/Any?safe-mode (Caused by NameResolutionError("HTTPSConnection(host='v2.jokeapi.dev', port=443): Failed to resolve 'v2.jokeapi.dev' ([Errno 11001] getaddrinfo failed)"))
+INFO 2026-05-21 13:57:21,553 basehttp "GET / HTTP/1.1" 200 12179
+INFO 2026-05-21 13:57:26,770 basehttp "GET /cart/ HTTP/1.1" 302 0
+INFO 2026-05-21 13:57:26,786 basehttp "GET /login/?next=/cart/ HTTP/1.1" 200 874
+INFO 2026-05-21 13:57:31,561 basehttp "GET /products/ HTTP/1.1" 200 5250
+ERROR 2026-05-21 13:57:33,616 services Ошибка получения факта: HTTPSConnectionPool(host='uselessfacts.jsph.pl', port=443): Max retries exceeded with url: /random.json?language=en (Caused by NameResolutionError("HTTPSConnection(host='uselessfacts.jsph.pl', port=443): Failed to resolve 'uselessfacts.jsph.pl' ([Errno 11001] getaddrinfo failed)"))
+ERROR 2026-05-21 13:57:33,619 services Ошибка получения шутки: HTTPSConnectionPool(host='v2.jokeapi.dev', port=443): Max retries exceeded with url: /joke/Any?safe-mode (Caused by NameResolutionError("HTTPSConnection(host='v2.jokeapi.dev', port=443): Failed to resolve 'v2.jokeapi.dev' ([Errno 11001] getaddrinfo failed)"))
+INFO 2026-05-21 13:57:33,624 basehttp "GET / HTTP/1.1" 200 12179
+INFO 2026-05-21 13:57:40,299 basehttp "GET /reviews/ HTTP/1.1" 200 4691
+ERROR 2026-05-21 13:57:50,923 services Ошибка получения факта: HTTPSConnectionPool(host='uselessfacts.jsph.pl', port=443): Max retries exceeded with url: /random.json?language=en (Caused by NameResolutionError("HTTPSConnection(host='uselessfacts.jsph.pl', port=443): Failed to resolve 'uselessfacts.jsph.pl' ([Errno 11001] getaddrinfo failed)"))
+ERROR 2026-05-21 13:57:50,928 services Ошибка получения шутки: HTTPSConnectionPool(host='v2.jokeapi.dev', port=443): Max retries exceeded with url: /joke/Any?safe-mode (Caused by NameResolutionError("HTTPSConnection(host='v2.jokeapi.dev', port=443): Failed to resolve 'v2.jokeapi.dev' ([Errno 11001] getaddrinfo failed)"))
+INFO 2026-05-21 13:57:50,933 basehttp "GET / HTTP/1.1" 200 12179
+INFO 2026-05-21 13:57:53,667 basehttp "GET /login/ HTTP/1.1" 200 874
+INFO 2026-05-21 13:58:13,622 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-05-21 13:58:13,631 basehttp "GET /redirect-after-login/ HTTP/1.1" 302 0
+INFO 2026-05-21 13:58:13,641 basehttp "GET /products/ HTTP/1.1" 200 5304
+ERROR 2026-05-21 13:58:15,533 services Ошибка получения факта: HTTPSConnectionPool(host='uselessfacts.jsph.pl', port=443): Max retries exceeded with url: /random.json?language=en (Caused by NameResolutionError("HTTPSConnection(host='uselessfacts.jsph.pl', port=443): Failed to resolve 'uselessfacts.jsph.pl' ([Errno 11001] getaddrinfo failed)"))
+ERROR 2026-05-21 13:58:15,538 services Ошибка получения шутки: HTTPSConnectionPool(host='v2.jokeapi.dev', port=443): Max retries exceeded with url: /joke/Any?safe-mode (Caused by NameResolutionError("HTTPSConnection(host='v2.jokeapi.dev', port=443): Failed to resolve 'v2.jokeapi.dev' ([Errno 11001] getaddrinfo failed)"))
+INFO 2026-05-21 13:58:15,555 basehttp "GET / HTTP/1.1" 200 12909
+INFO 2026-05-21 13:58:16,951 basehttp "GET /reviews/ HTTP/1.1" 200 6698
+ERROR 2026-05-21 13:58:21,255 services Ошибка получения факта: HTTPSConnectionPool(host='uselessfacts.jsph.pl', port=443): Max retries exceeded with url: /random.json?language=en (Caused by NameResolutionError("HTTPSConnection(host='uselessfacts.jsph.pl', port=443): Failed to resolve 'uselessfacts.jsph.pl' ([Errno 11001] getaddrinfo failed)"))
+ERROR 2026-05-21 13:58:21,259 services Ошибка получения шутки: HTTPSConnectionPool(host='v2.jokeapi.dev', port=443): Max retries exceeded with url: /joke/Any?safe-mode (Caused by NameResolutionError("HTTPSConnection(host='v2.jokeapi.dev', port=443): Failed to resolve 'v2.jokeapi.dev' ([Errno 11001] getaddrinfo failed)"))
+INFO 2026-05-21 13:58:21,269 basehttp "GET / HTTP/1.1" 200 12909
+INFO 2026-05-21 13:58:22,484 basehttp "GET /products/ HTTP/1.1" 200 5304
+INFO 2026-05-21 13:58:23,891 basehttp "GET /cart/add/8/ HTTP/1.1" 302 0
+INFO 2026-05-21 13:58:23,908 basehttp "GET /products/ HTTP/1.1" 200 5304
+INFO 2026-05-21 13:58:25,304 basehttp "GET /cart/add/9/ HTTP/1.1" 302 0
+INFO 2026-05-21 13:58:25,317 basehttp "GET /products/ HTTP/1.1" 200 5304
+ERROR 2026-05-21 13:58:26,892 services Ошибка получения факта: HTTPSConnectionPool(host='uselessfacts.jsph.pl', port=443): Max retries exceeded with url: /random.json?language=en (Caused by NameResolutionError("HTTPSConnection(host='uselessfacts.jsph.pl', port=443): Failed to resolve 'uselessfacts.jsph.pl' ([Errno 11001] getaddrinfo failed)"))
+ERROR 2026-05-21 13:58:26,895 services Ошибка получения шутки: HTTPSConnectionPool(host='v2.jokeapi.dev', port=443): Max retries exceeded with url: /joke/Any?safe-mode (Caused by NameResolutionError("HTTPSConnection(host='v2.jokeapi.dev', port=443): Failed to resolve 'v2.jokeapi.dev' ([Errno 11001] getaddrinfo failed)"))
+INFO 2026-05-21 13:58:26,906 basehttp "GET / HTTP/1.1" 200 12909
+INFO 2026-05-21 13:58:28,417 basehttp "GET /cart/ HTTP/1.1" 200 2628
+INFO 2026-05-21 13:58:38,949 basehttp "GET /cart/remove/8/ HTTP/1.1" 302 0
+INFO 2026-05-21 13:58:38,965 basehttp "GET /cart/ HTTP/1.1" 200 1891
+INFO 2026-05-21 13:58:41,455 basehttp "GET /cart/remove/9/ HTTP/1.1" 302 0
+INFO 2026-05-21 13:58:41,468 basehttp "GET /cart/ HTTP/1.1" 200 853
+ERROR 2026-05-21 13:58:43,475 services Ошибка получения факта: HTTPSConnectionPool(host='uselessfacts.jsph.pl', port=443): Max retries exceeded with url: /random.json?language=en (Caused by NameResolutionError("HTTPSConnection(host='uselessfacts.jsph.pl', port=443): Failed to resolve 'uselessfacts.jsph.pl' ([Errno 11001] getaddrinfo failed)"))
+ERROR 2026-05-21 13:58:43,478 services Ошибка получения шутки: HTTPSConnectionPool(host='v2.jokeapi.dev', port=443): Max retries exceeded with url: /joke/Any?safe-mode (Caused by NameResolutionError("HTTPSConnection(host='v2.jokeapi.dev', port=443): Failed to resolve 'v2.jokeapi.dev' ([Errno 11001] getaddrinfo failed)"))
+INFO 2026-05-21 13:58:43,486 basehttp "GET / HTTP/1.1" 200 12909
+INFO 2026-05-21 14:02:49,727 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 14:03:02,687 basehttp "GET / HTTP/1.1" 200 12891
+INFO 2026-05-21 14:03:07,384 basehttp "GET /calendar/ HTTP/1.1" 200 12094
+INFO 2026-05-21 14:03:14,537 basehttp "GET /calendar/?year=2026&month=6 HTTP/1.1" 200 11975
+INFO 2026-05-21 14:03:16,027 basehttp "GET /calendar/?year=2026&month=5 HTTP/1.1" 200 12094
+INFO 2026-05-21 14:03:21,513 basehttp "GET / HTTP/1.1" 200 13009
+WARNING 2026-05-21 14:04:33,160 log Not Found: /employee/order/99999/
+INFO 2026-05-21 14:28:30,894 autoreload Watching for file changes with StatReloader
+ERROR 2026-05-21 14:29:22,274 services Ошибка получения факта: HTTPSConnectionPool(host='uselessfacts.jsph.pl', port=443): Max retries exceeded with url: /random.json?language=en (Caused by NameResolutionError("HTTPSConnection(host='uselessfacts.jsph.pl', port=443): Failed to resolve 'uselessfacts.jsph.pl' ([Errno 11001] getaddrinfo failed)"))
+ERROR 2026-05-21 14:29:22,278 services Ошибка получения шутки: HTTPSConnectionPool(host='v2.jokeapi.dev', port=443): Max retries exceeded with url: /joke/Any?safe-mode (Caused by NameResolutionError("HTTPSConnection(host='v2.jokeapi.dev', port=443): Failed to resolve 'v2.jokeapi.dev' ([Errno 11001] getaddrinfo failed)"))
+INFO 2026-05-21 14:29:22,322 basehttp "GET / HTTP/1.1" 200 13401
+INFO 2026-05-21 14:29:25,428 basehttp "GET /calendar/ HTTP/1.1" 200 12094
+INFO 2026-05-21 14:29:27,202 basehttp "GET /calendar/?year=2026&month=4 HTTP/1.1" 200 11976
+ERROR 2026-05-21 14:29:29,487 services Ошибка получения факта: HTTPSConnectionPool(host='uselessfacts.jsph.pl', port=443): Max retries exceeded with url: /random.json?language=en (Caused by NameResolutionError("HTTPSConnection(host='uselessfacts.jsph.pl', port=443): Failed to resolve 'uselessfacts.jsph.pl' ([Errno 11001] getaddrinfo failed)"))
+ERROR 2026-05-21 14:29:29,492 services Ошибка получения шутки: HTTPSConnectionPool(host='v2.jokeapi.dev', port=443): Max retries exceeded with url: /joke/Any?safe-mode (Caused by NameResolutionError("HTTPSConnection(host='v2.jokeapi.dev', port=443): Failed to resolve 'v2.jokeapi.dev' ([Errno 11001] getaddrinfo failed)"))
+INFO 2026-05-21 14:29:29,506 basehttp "GET / HTTP/1.1" 200 13401
+INFO 2026-05-21 14:30:44,624 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 14:30:48,165 basehttp "GET / HTTP/1.1" 200 13291
+INFO 2026-05-21 14:31:08,611 basehttp "GET / HTTP/1.1" 200 13345
+WARNING 2026-05-21 14:31:08,920 log Not Found: /favicon.ico
+WARNING 2026-05-21 14:31:08,921 basehttp "GET /favicon.ico HTTP/1.1" 404 10077
+INFO 2026-05-21 14:31:12,614 basehttp "GET / HTTP/1.1" 200 13343
+INFO 2026-05-21 14:31:47,793 autoreload D:\453502\IGI_LR5\shop\views.py changed, reloading.
+INFO 2026-05-21 14:31:49,290 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 14:41:54,030 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 14:44:29,554 basehttp "GET / HTTP/1.1" 200 13214
+INFO 2026-05-21 14:44:33,034 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-05-21 14:44:33,981 basehttp "GET / HTTP/1.1" 200 12527
+INFO 2026-05-21 14:44:35,338 basehttp "GET /login/ HTTP/1.1" 200 874
+INFO 2026-05-21 14:44:40,180 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-05-21 14:44:40,188 basehttp "GET /redirect-after-login/ HTTP/1.1" 302 0
+INFO 2026-05-21 14:44:40,246 basehttp "GET /admin/ HTTP/1.1" 200 20742
+INFO 2026-05-21 14:44:47,121 basehttp "GET /admin/shop/news/ HTTP/1.1" 200 17976
+INFO 2026-05-21 14:44:47,150 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 14:44:56,869 basehttp "GET /admin/shop/order/ HTTP/1.1" 200 63829
+INFO 2026-05-21 14:44:56,892 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 14:45:03,721 basehttp "GET /admin/shop/product/ HTTP/1.1" 200 32521
+INFO 2026-05-21 14:45:03,746 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 14:45:05,213 basehttp "GET /admin/shop/product/15/change/ HTTP/1.1" 200 28646
+INFO 2026-05-21 14:45:05,236 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 14:45:50,938 basehttp "POST /admin/shop/product/15/change/ HTTP/1.1" 302 0
+INFO 2026-05-21 14:45:50,981 basehttp "GET /admin/shop/product/ HTTP/1.1" 200 32772
+INFO 2026-05-21 14:45:51,007 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 14:45:54,776 basehttp "GET / HTTP/1.1" 200 13035
+INFO 2026-05-21 14:45:55,989 basehttp "GET /products/ HTTP/1.1" 200 5304
+INFO 2026-05-21 14:46:00,517 basehttp "GET /products/?page=2 HTTP/1.1" 200 3409
+INFO 2026-05-21 14:46:06,305 basehttp "GET / HTTP/1.1" 200 12976
+INFO 2026-05-21 14:46:09,023 basehttp "GET / HTTP/1.1" 200 13109
+INFO 2026-05-21 14:46:10,961 basehttp "GET /products/ HTTP/1.1" 200 5304
+INFO 2026-05-21 14:46:14,088 basehttp "GET /products/?page=2 HTTP/1.1" 200 3409
+INFO 2026-05-21 14:51:28,833 autoreload D:\453502\IGI_LR5\shop\views.py changed, reloading.
+INFO 2026-05-21 14:51:30,718 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 14:51:45,707 autoreload D:\453502\IGI_LR5\shop\views.py changed, reloading.
+INFO 2026-05-21 14:51:47,269 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 14:52:39,665 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 14:52:44,132 basehttp "GET / HTTP/1.1" 200 12968
+INFO 2026-05-21 14:52:47,449 basehttp "GET /cart/ HTTP/1.1" 200 853
+INFO 2026-05-21 14:52:49,598 basehttp "GET / HTTP/1.1" 200 12979
+INFO 2026-05-21 14:52:50,985 basehttp "GET /products/ HTTP/1.1" 200 7699
+INFO 2026-05-21 14:52:54,852 basehttp "GET /products/?page=2 HTTP/1.1" 200 4966
+INFO 2026-05-21 14:52:54,953 basehttp "GET /media/products/ecl.jpg HTTP/1.1" 200 11495
+INFO 2026-05-21 14:53:00,552 basehttp "GET / HTTP/1.1" 200 13005
+INFO 2026-05-21 14:53:04,120 basehttp "GET /statistics/ HTTP/1.1" 200 145090
+INFO 2026-05-21 15:44:11,367 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 15:44:15,426 basehttp "GET / HTTP/1.1" 200 12999
+INFO 2026-05-21 15:44:20,745 basehttp "GET /reviews/ HTTP/1.1" 200 6698
+INFO 2026-05-21 15:44:23,208 basehttp "GET / HTTP/1.1" 200 13063
+INFO 2026-05-21 15:44:26,299 basehttp "GET /statistics/ HTTP/1.1" 200 145090
+INFO 2026-05-21 15:44:29,347 basehttp "GET / HTTP/1.1" 200 13003
+INFO 2026-05-21 15:56:45,791 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 15:56:50,138 basehttp "GET / HTTP/1.1" 200 12192
+INFO 2026-05-21 15:56:55,457 basehttp "GET / HTTP/1.1" 200 12377
+WARNING 2026-05-21 15:56:55,747 log Not Found: /favicon.ico
+WARNING 2026-05-21 15:56:55,749 basehttp "GET /favicon.ico HTTP/1.1" 404 10077
+INFO 2026-05-21 15:56:59,252 basehttp "GET /promocodes/ HTTP/1.1" 200 8460
+INFO 2026-05-21 15:57:03,171 basehttp "GET /cart/ HTTP/1.1" 200 10288
+INFO 2026-05-21 15:57:07,166 basehttp "GET /products/ HTTP/1.1" 200 13896
+INFO 2026-05-21 15:57:11,527 basehttp "GET / HTTP/1.1" 200 12384
+INFO 2026-05-21 15:57:27,547 basehttp "GET /calendar/ HTTP/1.1" 200 13453
+INFO 2026-05-21 15:57:30,047 basehttp "GET /orders/ HTTP/1.1" 200 8279
+INFO 2026-05-21 15:57:33,615 basehttp "GET /products/ HTTP/1.1" 200 13896
+INFO 2026-05-21 15:57:35,798 basehttp "GET / HTTP/1.1" 200 12393
+INFO 2026-05-21 15:57:37,583 basehttp "GET /products/ HTTP/1.1" 200 13896
+INFO 2026-05-21 15:59:01,301 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 15:59:05,198 basehttp "GET / HTTP/1.1" 200 12130
+INFO 2026-05-21 15:59:08,651 basehttp "GET / HTTP/1.1" 200 12355
+WARNING 2026-05-21 15:59:08,923 log Not Found: /favicon.ico
+WARNING 2026-05-21 15:59:08,925 basehttp "GET /favicon.ico HTTP/1.1" 404 10077
+INFO 2026-05-21 15:59:11,454 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-05-21 15:59:12,189 basehttp "GET / HTTP/1.1" 200 11669
+INFO 2026-05-21 15:59:13,396 basehttp "GET /login/ HTTP/1.1" 200 8442
+INFO 2026-05-21 15:59:22,499 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-05-21 15:59:22,512 basehttp "GET /redirect-after-login/ HTTP/1.1" 302 0
+INFO 2026-05-21 15:59:22,594 basehttp "GET /admin/ HTTP/1.1" 200 20309
+INFO 2026-05-21 15:59:25,943 basehttp "GET / HTTP/1.1" 200 12152
+INFO 2026-05-21 15:59:49,014 basehttp "GET /cart/ HTTP/1.1" 200 7584
+INFO 2026-05-21 15:59:50,560 basehttp "GET /products/ HTTP/1.1" 200 13675
+INFO 2026-05-21 15:59:52,623 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-05-21 15:59:53,777 basehttp "GET / HTTP/1.1" 200 11634
+INFO 2026-05-21 15:59:55,063 basehttp "GET /login/ HTTP/1.1" 200 8442
+INFO 2026-05-21 15:59:59,504 basehttp "GET /register/ HTTP/1.1" 200 10433
+INFO 2026-05-21 16:00:15,793 basehttp "GET /login/ HTTP/1.1" 200 8442
+INFO 2026-05-21 16:00:36,688 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-05-21 16:00:36,702 basehttp "GET /redirect-after-login/ HTTP/1.1" 302 0
+INFO 2026-05-21 16:00:36,757 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 7559
+INFO 2026-05-21 16:00:43,345 basehttp "GET /employee/clients/ HTTP/1.1" 200 2046
+INFO 2026-05-21 16:00:46,842 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 7559
+INFO 2026-05-21 16:01:01,608 basehttp "GET /employee/clients/ HTTP/1.1" 200 2046
+INFO 2026-05-21 16:01:03,404 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 7559
+INFO 2026-05-21 16:01:26,743 basehttp "GET /employee/clients/ HTTP/1.1" 200 2046
+INFO 2026-05-21 16:01:28,229 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 7559
+INFO 2026-05-21 16:01:32,220 basehttp "GET /employee/order/16/ HTTP/1.1" 200 2714
+INFO 2026-05-21 16:01:38,455 basehttp "POST /employee/order/16/ HTTP/1.1" 200 2714
+INFO 2026-05-21 16:01:44,667 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 7553
+INFO 2026-05-21 16:01:51,310 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-05-21 16:01:52,601 basehttp "GET / HTTP/1.1" 200 11621
+INFO 2026-05-21 16:01:54,400 basehttp "GET /login/ HTTP/1.1" 200 8442
+INFO 2026-05-21 16:02:00,348 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-05-21 16:02:00,357 basehttp "GET /redirect-after-login/ HTTP/1.1" 302 0
+INFO 2026-05-21 16:02:00,393 basehttp "GET /admin/ HTTP/1.1" 200 20455
+INFO 2026-05-21 16:02:04,415 basehttp "GET /admin/shop/employee/ HTTP/1.1" 200 21616
+INFO 2026-05-21 16:02:04,455 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-21 16:11:16,696 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 16:11:21,495 basehttp "GET / HTTP/1.1" 200 12186
+INFO 2026-05-21 16:11:24,056 basehttp "GET /admin/ HTTP/1.1" 200 20309
+INFO 2026-05-21 16:11:28,095 basehttp "GET / HTTP/1.1" 200 12152
+INFO 2026-05-21 16:11:33,150 basehttp "GET /products/ HTTP/1.1" 200 13675
+INFO 2026-05-21 16:11:58,314 basehttp "GET /admin/ HTTP/1.1" 200 20309
+INFO 2026-05-21 16:12:01,712 basehttp "GET / HTTP/1.1" 200 12143
+INFO 2026-05-21 16:12:45,414 basehttp "GET /admin/ HTTP/1.1" 200 20309
+INFO 2026-05-21 16:13:01,541 basehttp "GET / HTTP/1.1" 200 12129
+INFO 2026-05-21 16:14:48,708 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 16:14:52,432 basehttp "GET / HTTP/1.1" 200 12661
+INFO 2026-05-21 16:14:57,662 basehttp "GET /employee/dashboard/ HTTP/1.1" 302 0
+INFO 2026-05-21 16:14:58,573 basehttp "GET / HTTP/1.1" 200 12612
+INFO 2026-05-21 16:15:01,361 basehttp "GET /employee/dashboard/ HTTP/1.1" 302 0
+INFO 2026-05-21 16:15:02,305 basehttp "GET / HTTP/1.1" 200 12651
+INFO 2026-05-21 16:15:08,573 basehttp "GET /admin/ HTTP/1.1" 200 20600
+INFO 2026-05-21 16:15:08,692 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2026-05-21 16:15:11,861 basehttp "GET / HTTP/1.1" 200 12602
+INFO 2026-05-21 16:15:13,486 basehttp "GET /employee/dashboard/ HTTP/1.1" 302 0
+INFO 2026-05-21 16:15:14,473 basehttp "GET / HTTP/1.1" 200 12599
+INFO 2026-05-21 16:15:37,231 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-05-21 16:15:38,213 basehttp "GET / HTTP/1.1" 200 11952
+INFO 2026-05-21 16:15:39,841 basehttp "GET /login/ HTTP/1.1" 200 8773
+INFO 2026-05-21 16:15:51,210 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-05-21 16:15:51,219 basehttp "GET /redirect-after-login/ HTTP/1.1" 302 0
+INFO 2026-05-21 16:15:51,260 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 15007
+INFO 2026-05-21 16:15:55,136 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 15007
+INFO 2026-05-21 16:15:59,001 basehttp "GET /employee/order/16/ HTTP/1.1" 200 9773
+INFO 2026-05-21 16:16:10,220 basehttp "POST /employee/order/16/ HTTP/1.1" 200 9773
+INFO 2026-05-21 16:16:11,651 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 15010
+INFO 2026-05-21 16:16:39,744 basehttp "GET / HTTP/1.1" 200 12378
+INFO 2026-05-21 16:16:41,535 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 15010
+INFO 2026-05-21 16:18:05,259 autoreload D:\453502\IGI_LR5\shop\views.py changed, reloading.
+INFO 2026-05-21 16:18:06,874 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 16:18:29,117 autoreload D:\453502\IGI_LR5\shop\views.py changed, reloading.
+INFO 2026-05-21 16:18:30,494 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 16:18:39,885 autoreload D:\453502\IGI_LR5\shop\views.py changed, reloading.
+INFO 2026-05-21 16:18:41,770 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 16:19:03,399 autoreload D:\453502\IGI_LR5\shop\urls.py changed, reloading.
+INFO 2026-05-21 16:19:04,949 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 16:19:23,717 autoreload D:\453502\IGI_LR5\shop\forms.py changed, reloading.
+INFO 2026-05-21 16:19:25,218 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 16:21:13,458 autoreload D:\453502\IGI_LR5\shop\views.py changed, reloading.
+INFO 2026-05-21 16:21:15,030 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 16:21:21,276 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 16:22:29,307 autoreload D:\453502\IGI_LR5\shop\views.py changed, reloading.
+INFO 2026-05-21 16:22:30,720 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 16:24:46,834 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 16:24:50,569 basehttp "GET / HTTP/1.1" 200 12395
+INFO 2026-05-21 16:24:56,593 basehttp "GET / HTTP/1.1" 200 12616
+WARNING 2026-05-21 16:24:56,878 log Not Found: /favicon.ico
+WARNING 2026-05-21 16:24:56,879 basehttp "GET /favicon.ico HTTP/1.1" 404 10982
+INFO 2026-05-21 16:24:59,357 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 18837
+INFO 2026-05-21 16:25:03,230 basehttp "GET /employee/order/16/edit/ HTTP/1.1" 200 13365
+INFO 2026-05-21 16:25:06,293 basehttp "POST /employee/order/16/edit/ HTTP/1.1" 302 0
+INFO 2026-05-21 16:25:06,312 basehttp "GET /employee/order/16/ HTTP/1.1" 302 0
+INFO 2026-05-21 16:25:06,986 basehttp "GET / HTTP/1.1" 200 12726
+INFO 2026-05-21 16:25:09,097 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 18837
+INFO 2026-05-21 16:25:12,596 basehttp "GET /employee/order/1/ HTTP/1.1" 302 0
+INFO 2026-05-21 16:25:13,367 basehttp "GET / HTTP/1.1" 200 12603
+INFO 2026-05-21 16:25:15,942 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 18837
+INFO 2026-05-21 16:25:20,593 basehttp "GET /employee/order/3/ HTTP/1.1" 302 0
+INFO 2026-05-21 16:25:21,244 basehttp "GET / HTTP/1.1" 200 12610
+INFO 2026-05-21 16:25:23,005 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 18837
+INFO 2026-05-21 16:25:24,408 basehttp "GET /employee/order/16/edit/ HTTP/1.1" 200 13365
+INFO 2026-05-21 16:25:35,720 basehttp "POST /employee/order/16/edit/ HTTP/1.1" 302 0
+INFO 2026-05-21 16:25:35,737 basehttp "GET /employee/order/16/ HTTP/1.1" 302 0
+INFO 2026-05-21 16:25:36,810 basehttp "GET / HTTP/1.1" 200 12625
+INFO 2026-05-21 16:25:38,711 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 18837
+INFO 2026-05-21 16:25:47,338 basehttp "GET /employee/order/16/edit/ HTTP/1.1" 200 13367
+INFO 2026-05-21 16:25:49,955 basehttp "GET /employee/order/16/ HTTP/1.1" 302 0
+INFO 2026-05-21 16:25:50,923 basehttp "GET / HTTP/1.1" 200 12622
+INFO 2026-05-21 16:25:52,728 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 18837
+INFO 2026-05-21 16:25:58,212 basehttp "GET /employee/order/2/delete/ HTTP/1.1" 302 0
+INFO 2026-05-21 16:25:58,933 basehttp "GET / HTTP/1.1" 200 12629
+INFO 2026-05-21 16:26:00,639 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 18837
+INFO 2026-05-21 16:26:11,550 basehttp "GET /employee/order/2/delete/ HTTP/1.1" 302 0
+INFO 2026-05-21 16:26:12,270 basehttp "GET / HTTP/1.1" 200 12613
+INFO 2026-05-21 16:26:13,708 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 18837
+INFO 2026-05-21 16:27:00,363 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-05-21 16:27:01,018 basehttp "GET / HTTP/1.1" 200 12013
+INFO 2026-05-21 16:27:02,541 basehttp "GET /login/ HTTP/1.1" 200 8773
+INFO 2026-05-21 16:27:11,590 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-05-21 16:27:11,603 basehttp "GET /redirect-after-login/ HTTP/1.1" 302 0
+INFO 2026-05-21 16:27:11,637 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 15806
+INFO 2026-05-21 16:27:14,557 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 15806
+INFO 2026-05-21 16:27:16,872 basehttp "GET /employee/order/create/ HTTP/1.1" 200 10634
+INFO 2026-05-21 16:27:27,965 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 15806
+INFO 2026-05-21 16:31:02,793 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 16:31:06,568 basehttp "GET / HTTP/1.1" 200 12383
+INFO 2026-05-21 16:31:10,431 basehttp "GET / HTTP/1.1" 200 12491
+WARNING 2026-05-21 16:31:10,715 log Not Found: /favicon.ico
+WARNING 2026-05-21 16:31:10,716 basehttp "GET /favicon.ico HTTP/1.1" 404 10982
+INFO 2026-05-21 16:31:12,426 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 15837
+INFO 2026-05-21 16:31:14,913 basehttp "GET /employee/order/16/ HTTP/1.1" 200 9775
+INFO 2026-05-21 16:31:20,472 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 15837
+INFO 2026-05-21 16:31:29,377 basehttp "GET /employee/order/8/delete/ HTTP/1.1" 200 8352
+INFO 2026-05-21 16:31:31,129 basehttp "POST /employee/order/8/delete/ HTTP/1.1" 302 0
+INFO 2026-05-21 16:31:31,173 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 15138
+INFO 2026-05-21 16:31:40,251 basehttp "GET /employee/order/6/edit/ HTTP/1.1" 200 13136
+INFO 2026-05-21 16:31:48,952 basehttp "POST /employee/order/6/edit/ HTTP/1.1" 302 0
+INFO 2026-05-21 16:31:48,987 basehttp "GET /employee/order/6/ HTTP/1.1" 200 9593
+INFO 2026-05-21 16:31:53,073 basehttp "POST /employee/order/6/ HTTP/1.1" 302 0
+INFO 2026-05-21 16:31:53,107 basehttp "GET /employee/order/6/ HTTP/1.1" 200 9593
+INFO 2026-05-21 16:31:55,322 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 15144
+INFO 2026-05-21 16:31:59,678 basehttp "GET /employee/order/create/ HTTP/1.1" 200 10634
+INFO 2026-05-21 16:32:24,214 basehttp "POST /employee/order/create/ HTTP/1.1" 302 0
+INFO 2026-05-21 16:32:24,269 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 15851
+INFO 2026-05-21 16:32:32,493 basehttp "GET /employee/order/17/edit/ HTTP/1.1" 200 13137
+INFO 2026-05-21 16:34:44,623 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 16:35:41,400 autoreload Watching for file changes with StatReloader
+ERROR 2026-05-21 16:36:14,652 services Ошибка получения факта: HTTPSConnectionPool(host='uselessfacts.jsph.pl', port=443): Read timed out. (read timeout=5)
+INFO 2026-05-21 16:36:15,033 basehttp "GET / HTTP/1.1" 200 12516
+INFO 2026-05-21 16:36:17,324 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 15851
+INFO 2026-05-21 16:36:21,600 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 15851
+WARNING 2026-05-21 16:36:22,016 log Not Found: /favicon.ico
+WARNING 2026-05-21 16:36:22,018 basehttp "GET /favicon.ico HTTP/1.1" 404 11981
+INFO 2026-05-21 16:36:24,544 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 15851
+INFO 2026-05-21 16:36:28,223 basehttp "GET /employee/order/17/edit/ HTTP/1.1" 200 13137
+INFO 2026-05-21 16:36:36,120 basehttp "POST /employee/order/17/edit/ HTTP/1.1" 302 0
+INFO 2026-05-21 16:36:36,158 basehttp "GET /employee/order/17/ HTTP/1.1" 200 9931
+ERROR 2026-05-21 16:36:40,894 log Internal Server Error: /employee/order/17/add-item/
+Traceback (most recent call last):
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\453502\IGI_LR5\shop\views.py", line 790, in employee_order_add_item
+    form = OrderItemForm()
+           ^^^^^^^^^^^^^
+NameError: name 'OrderItemForm' is not defined. Did you mean: 'OrderItem'?
+ERROR 2026-05-21 16:36:40,900 basehttp "GET /employee/order/17/add-item/ HTTP/1.1" 500 74119
+INFO 2026-05-21 16:37:34,512 autoreload D:\453502\IGI_LR5\shop\views.py changed, reloading.
+INFO 2026-05-21 16:37:36,542 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 16:37:46,951 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 16:37:52,074 basehttp "GET / HTTP/1.1" 200 12317
+INFO 2026-05-21 16:38:00,027 basehttp "GET / HTTP/1.1" 200 12361
+WARNING 2026-05-21 16:38:00,292 log Not Found: /favicon.ico
+WARNING 2026-05-21 16:38:00,293 basehttp "GET /favicon.ico HTTP/1.1" 404 11981
+INFO 2026-05-21 16:38:03,057 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 15851
+INFO 2026-05-21 16:38:05,533 basehttp "GET /employee/order/17/ HTTP/1.1" 200 9931
+INFO 2026-05-21 16:38:08,461 basehttp "GET /employee/order/17/add-item/ HTTP/1.1" 200 10558
+INFO 2026-05-21 16:38:17,028 basehttp "POST /employee/order/17/add-item/ HTTP/1.1" 302 0
+INFO 2026-05-21 16:38:17,065 basehttp "GET /employee/order/17/ HTTP/1.1" 200 10319
+INFO 2026-05-21 16:38:19,852 basehttp "POST /employee/order/17/ HTTP/1.1" 302 0
+INFO 2026-05-21 16:38:19,882 basehttp "GET /employee/order/17/ HTTP/1.1" 200 10319
+INFO 2026-05-21 16:38:22,097 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 15854
+INFO 2026-05-21 16:38:27,246 basehttp "GET /employee/order/17/ HTTP/1.1" 200 10319
+INFO 2026-05-21 16:38:32,493 basehttp "GET / HTTP/1.1" 200 12332
+INFO 2026-05-21 16:39:23,711 basehttp "GET /calendar/ HTTP/1.1" 200 13475
+INFO 2026-05-21 16:39:32,719 basehttp "GET / HTTP/1.1" 200 12402
+INFO 2026-05-21 16:39:33,725 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 15854
+INFO 2026-05-21 16:40:04,061 basehttp "GET /employee/order/16/edit/ HTTP/1.1" 200 13140
+INFO 2026-05-21 16:40:07,160 basehttp "POST /employee/order/16/edit/ HTTP/1.1" 302 0
+INFO 2026-05-21 16:40:07,197 basehttp "GET /employee/order/16/ HTTP/1.1" 200 11235
+INFO 2026-05-21 16:40:14,458 basehttp "GET /products/ HTTP/1.1" 200 13918
+INFO 2026-05-21 16:40:17,755 basehttp "GET /products/?page=2 HTTP/1.1" 200 11485
+INFO 2026-05-21 16:40:17,880 basehttp "GET /media/products/ecl.jpg HTTP/1.1" 200 11495
+INFO 2026-05-21 16:40:20,849 basehttp "GET /reviews/ HTTP/1.1" 200 13033
+INFO 2026-05-21 16:40:22,560 basehttp "GET /news/ HTTP/1.1" 200 9030
+INFO 2026-05-21 16:40:22,579 basehttp "GET /media/news/%D0%BA%D1%83%D0%BB.jpg HTTP/1.1" 200 49467
+INFO 2026-05-21 16:40:24,869 basehttp "GET /contacts/ HTTP/1.1" 200 9983
+INFO 2026-05-21 16:40:24,898 basehttp "GET /media/employees/sotr.jpg HTTP/1.1" 200 35065
+INFO 2026-05-21 16:40:30,804 basehttp "GET / HTTP/1.1" 200 12343
+INFO 2026-05-21 16:42:14,480 autoreload D:\453502\IGI_LR5\shop\views.py changed, reloading.
+INFO 2026-05-21 16:42:16,355 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 16:45:10,619 autoreload D:\453502\IGI_LR5\shop\views.py changed, reloading.
+INFO 2026-05-21 16:45:12,485 autoreload Watching for file changes with StatReloader
+INFO 2026-05-21 16:54:39,413 autoreload D:\453502\IGI_LR5\shop\models.py changed, reloading.
+INFO 2026-05-21 16:54:41,083 autoreload Watching for file changes with StatReloader
+INFO 2026-05-22 00:34:58,546 autoreload Watching for file changes with StatReloader
+INFO 2026-05-22 00:35:04,755 basehttp "GET / HTTP/1.1" 200 12327
+INFO 2026-05-22 00:35:09,008 basehttp "GET / HTTP/1.1" 200 12365
+WARNING 2026-05-22 00:35:09,691 log Not Found: /favicon.ico
+WARNING 2026-05-22 00:35:09,693 basehttp "GET /favicon.ico HTTP/1.1" 404 11981
+INFO 2026-05-22 00:35:17,494 basehttp "GET /products/ HTTP/1.1" 200 13918
+INFO 2026-05-22 00:35:22,076 basehttp "GET /products/?page=2 HTTP/1.1" 200 11485
+INFO 2026-05-22 00:35:22,097 basehttp "GET /media/products/ecl.jpg HTTP/1.1" 304 0
+INFO 2026-05-22 00:35:33,262 basehttp "GET /products/?page=1 HTTP/1.1" 200 13918
+INFO 2026-05-22 00:35:36,289 basehttp "GET /cart/ HTTP/1.1" 200 7827
+INFO 2026-05-22 00:35:44,272 basehttp "GET /products/ HTTP/1.1" 200 13918
+INFO 2026-05-22 00:35:46,897 basehttp "GET /reviews/ HTTP/1.1" 200 13033
+INFO 2026-05-22 00:35:52,606 basehttp "GET /products/ HTTP/1.1" 200 13918
+INFO 2026-05-22 00:35:54,062 basehttp "GET /reviews/ HTTP/1.1" 200 13033
+INFO 2026-05-22 00:35:55,911 basehttp "GET /promocodes/ HTTP/1.1" 200 8482
+INFO 2026-05-22 00:35:58,596 basehttp "GET /about/ HTTP/1.1" 200 8059
+INFO 2026-05-22 00:36:00,671 basehttp "GET /news/ HTTP/1.1" 200 9030
+INFO 2026-05-22 00:36:00,693 basehttp "GET /media/news/%D0%BA%D1%83%D0%BB.jpg HTTP/1.1" 304 0
+INFO 2026-05-22 00:36:05,413 basehttp "GET /glossary/ HTTP/1.1" 200 8747
+INFO 2026-05-22 00:36:08,581 basehttp "GET /vacancies/ HTTP/1.1" 200 8239
+INFO 2026-05-22 00:36:11,084 basehttp "GET /contacts/ HTTP/1.1" 200 9983
+INFO 2026-05-22 00:36:11,107 basehttp "GET /media/employees/sotr.jpg HTTP/1.1" 304 0
+INFO 2026-05-22 00:36:14,958 basehttp "GET /calendar/ HTTP/1.1" 200 13475
+INFO 2026-05-22 00:36:19,980 basehttp "GET /privacy/ HTTP/1.1" 200 7441
+INFO 2026-05-22 00:36:23,253 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 15854
+INFO 2026-05-22 00:36:32,872 basehttp "GET /employee/order/create/ HTTP/1.1" 200 10634
+INFO 2026-05-22 00:37:02,841 basehttp "GET /promocodes/ HTTP/1.1" 200 8482
+INFO 2026-05-22 00:37:25,139 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 15854
+INFO 2026-05-22 00:37:27,304 basehttp "GET /employee/order/create/ HTTP/1.1" 200 10634
+INFO 2026-05-22 00:37:38,728 basehttp "POST /employee/order/create/ HTTP/1.1" 200 10831
+INFO 2026-05-22 00:37:54,837 basehttp "POST /employee/order/create/ HTTP/1.1" 302 0
+INFO 2026-05-22 00:37:54,900 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 16562
+INFO 2026-05-22 00:37:58,532 basehttp "GET /employee/order/18/ HTTP/1.1" 200 9936
+INFO 2026-05-22 00:38:02,595 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 16562
+INFO 2026-05-22 00:38:04,239 basehttp "GET /employee/order/18/edit/ HTTP/1.1" 200 13150
+INFO 2026-05-22 00:38:13,149 basehttp "POST /employee/order/18/edit/ HTTP/1.1" 302 0
+INFO 2026-05-22 00:38:13,191 basehttp "GET /employee/order/18/ HTTP/1.1" 200 9936
+INFO 2026-05-22 00:38:18,297 basehttp "POST /employee/order/18/ HTTP/1.1" 302 0
+INFO 2026-05-22 00:38:18,325 basehttp "GET /employee/order/18/ HTTP/1.1" 200 9936
+INFO 2026-05-22 00:38:19,934 basehttp "GET /employee/order/18/add-item/ HTTP/1.1" 200 10558
+INFO 2026-05-22 00:38:29,706 basehttp "POST /employee/order/18/add-item/ HTTP/1.1" 302 0
+INFO 2026-05-22 00:38:29,732 basehttp "GET /employee/order/18/ HTTP/1.1" 200 10321
+INFO 2026-05-22 00:38:34,996 basehttp "GET /employee/order/18/add-item/ HTTP/1.1" 200 10558
+INFO 2026-05-22 00:38:42,393 basehttp "POST /employee/order/18/add-item/ HTTP/1.1" 302 0
+INFO 2026-05-22 00:38:42,423 basehttp "GET /employee/order/18/ HTTP/1.1" 200 10777
+INFO 2026-05-22 00:38:45,724 basehttp "POST /employee/order/18/ HTTP/1.1" 302 0
+INFO 2026-05-22 00:38:45,765 basehttp "GET /employee/order/18/ HTTP/1.1" 200 10777
+INFO 2026-05-22 00:38:49,140 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 16568
+INFO 2026-05-22 00:38:53,928 basehttp "GET /employee/order/18/ HTTP/1.1" 200 10777
+INFO 2026-05-22 00:38:59,448 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 16568
+INFO 2026-05-22 00:39:01,604 basehttp "GET /employee/order/18/edit/ HTTP/1.1" 200 13153
+INFO 2026-05-22 00:39:06,167 basehttp "POST /employee/order/18/edit/ HTTP/1.1" 302 0
+INFO 2026-05-22 00:39:06,197 basehttp "GET /employee/order/18/ HTTP/1.1" 200 10777
+INFO 2026-05-22 00:39:11,591 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 16568
+INFO 2026-05-22 00:39:59,852 basehttp "GET /employee/order/5/ HTTP/1.1" 200 11234
+INFO 2026-05-22 00:40:05,143 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 16568
+INFO 2026-05-22 00:40:15,760 basehttp "GET /employee/order/17/delete/ HTTP/1.1" 200 8357
+INFO 2026-05-22 00:40:19,214 basehttp "POST /employee/order/17/delete/ HTTP/1.1" 302 0
+INFO 2026-05-22 00:40:19,263 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 15857
+INFO 2026-05-22 00:40:29,473 basehttp "GET /products/ HTTP/1.1" 200 13918
+INFO 2026-05-22 00:40:31,504 basehttp "GET /cart/add/8/ HTTP/1.1" 302 0
+INFO 2026-05-22 00:40:31,538 basehttp "GET /products/ HTTP/1.1" 200 13918
+INFO 2026-05-22 00:40:34,739 basehttp "GET /cart/add/8/ HTTP/1.1" 302 0
+INFO 2026-05-22 00:40:34,768 basehttp "GET /products/ HTTP/1.1" 200 13918
+INFO 2026-05-22 00:40:36,363 basehttp "GET /cart/ HTTP/1.1" 200 8814
+INFO 2026-05-22 00:40:38,792 basehttp "GET /products/ HTTP/1.1" 200 13918
+INFO 2026-05-22 00:40:40,705 basehttp "GET /cart/add/3/ HTTP/1.1" 302 0
+INFO 2026-05-22 00:40:40,732 basehttp "GET /products/ HTTP/1.1" 200 13918
+INFO 2026-05-22 00:40:42,445 basehttp "GET /cart/ HTTP/1.1" 200 9562
+INFO 2026-05-22 00:40:46,409 basehttp "GET /order/create/ HTTP/1.1" 302 0
+INFO 2026-05-22 00:40:46,753 basehttp "GET / HTTP/1.1" 200 12358
+INFO 2026-05-22 00:40:53,264 basehttp "GET /cart/ HTTP/1.1" 200 9562
+INFO 2026-05-22 00:40:58,338 basehttp "GET /order/create/ HTTP/1.1" 302 0
+INFO 2026-05-22 00:40:58,739 basehttp "GET / HTTP/1.1" 200 12544
+INFO 2026-05-22 00:41:24,767 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-05-22 00:41:25,091 basehttp "GET / HTTP/1.1" 200 11921
+INFO 2026-05-22 00:41:27,296 basehttp "GET /login/ HTTP/1.1" 200 8773
+INFO 2026-05-22 00:41:38,480 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-05-22 00:41:38,497 basehttp "GET /redirect-after-login/ HTTP/1.1" 302 0
+INFO 2026-05-22 00:41:38,525 basehttp "GET /products/ HTTP/1.1" 200 14227
+INFO 2026-05-22 00:41:43,154 basehttp "GET /orders/ HTTP/1.1" 200 8611
+INFO 2026-05-22 00:41:48,516 basehttp "GET /pickup-points/ HTTP/1.1" 200 8157
+INFO 2026-05-22 00:41:59,075 basehttp "GET /orders/ HTTP/1.1" 200 8611
+INFO 2026-05-22 00:42:03,719 basehttp "GET /promocodes/ HTTP/1.1" 200 8791
+INFO 2026-05-22 00:42:06,233 basehttp "GET /reviews/ HTTP/1.1" 200 13342
+INFO 2026-05-22 00:42:21,206 basehttp "POST /reviews/add/ HTTP/1.1" 302 0
+INFO 2026-05-22 00:42:21,256 basehttp "GET /reviews/ HTTP/1.1" 200 13342
+INFO 2026-05-22 00:42:29,516 basehttp "GET / HTTP/1.1" 200 12639
+INFO 2026-05-22 00:42:30,754 basehttp "GET /reviews/ HTTP/1.1" 200 13342
+INFO 2026-05-22 00:42:48,535 basehttp "POST /reviews/add/ HTTP/1.1" 302 0
+INFO 2026-05-22 00:42:48,580 basehttp "GET /reviews/ HTTP/1.1" 200 13342
+INFO 2026-05-22 00:42:53,739 basehttp "GET /cart/ HTTP/1.1" 200 8136
+INFO 2026-05-22 00:42:55,433 basehttp "GET /products/ HTTP/1.1" 200 14227
+INFO 2026-05-22 00:42:57,463 basehttp "GET /cart/add/9/ HTTP/1.1" 302 0
+INFO 2026-05-22 00:42:57,500 basehttp "GET /products/ HTTP/1.1" 200 14227
+INFO 2026-05-22 00:42:58,862 basehttp "GET /cart/add/3/ HTTP/1.1" 302 0
+INFO 2026-05-22 00:42:58,901 basehttp "GET /products/ HTTP/1.1" 200 14227
+INFO 2026-05-22 00:43:00,579 basehttp "GET /cart/ HTTP/1.1" 200 9874
+INFO 2026-05-22 00:43:03,676 basehttp "POST /cart/update/9/ HTTP/1.1" 302 0
+INFO 2026-05-22 00:43:03,701 basehttp "GET /cart/ HTTP/1.1" 200 9874
+INFO 2026-05-22 00:43:05,113 basehttp "POST /cart/update/3/ HTTP/1.1" 302 0
+INFO 2026-05-22 00:43:05,144 basehttp "GET /cart/ HTTP/1.1" 200 9874
+INFO 2026-05-22 00:43:06,406 basehttp "GET /order/create/ HTTP/1.1" 200 10364
+INFO 2026-05-22 00:43:35,659 basehttp "POST /order/create/ HTTP/1.1" 302 0
+INFO 2026-05-22 00:43:35,684 basehttp "GET /orders/ HTTP/1.1" 200 8916
+INFO 2026-05-22 00:43:52,778 basehttp "GET /reviews/ HTTP/1.1" 200 13342
+INFO 2026-05-22 00:43:57,226 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-05-22 00:43:57,609 basehttp "GET / HTTP/1.1" 200 11959
+INFO 2026-05-22 00:43:58,850 basehttp "GET /login/ HTTP/1.1" 200 8773
+INFO 2026-05-22 00:44:06,208 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-05-22 00:44:06,224 basehttp "GET /redirect-after-login/ HTTP/1.1" 302 0
+INFO 2026-05-22 00:44:06,323 basehttp "GET /admin/ HTTP/1.1" 200 22317
+INFO 2026-05-22 00:44:06,485 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2026-05-22 00:44:09,266 basehttp "GET / HTTP/1.1" 200 12736
+INFO 2026-05-22 00:44:12,276 basehttp "GET /admin/ HTTP/1.1" 200 20309
+INFO 2026-05-22 00:44:15,975 basehttp "GET / HTTP/1.1" 200 12603
+INFO 2026-05-22 00:44:20,901 basehttp "GET /statistics/ HTTP/1.1" 200 152065
+INFO 2026-05-22 00:44:37,901 basehttp "GET /promocodes/ HTTP/1.1" 200 8709
+INFO 2026-05-22 00:44:39,238 basehttp "GET /reviews/ HTTP/1.1" 200 13260
+INFO 2026-05-22 00:45:04,054 basehttp "GET /promocodes/ HTTP/1.1" 200 8709
+INFO 2026-05-22 00:45:08,484 basehttp "GET /news/ HTTP/1.1" 200 9257
+INFO 2026-05-22 00:45:11,620 basehttp "GET /news/3/ HTTP/1.1" 200 7854
+INFO 2026-05-22 00:45:13,993 basehttp "GET /news/ HTTP/1.1" 200 9257
+INFO 2026-05-22 00:45:15,943 basehttp "GET /glossary/ HTTP/1.1" 200 8974
+INFO 2026-05-22 00:45:19,465 basehttp "GET /contacts/ HTTP/1.1" 200 10210
+INFO 2026-05-22 00:45:22,838 basehttp "GET /privacy/ HTTP/1.1" 200 7668
+INFO 2026-05-22 00:45:24,995 basehttp "GET /cart/ HTTP/1.1" 200 8054
+INFO 2026-05-22 00:45:26,414 basehttp "GET /products/ HTTP/1.1" 200 14145
+INFO 2026-05-22 00:45:27,962 basehttp "GET /cart/add/8/ HTTP/1.1" 302 0
+INFO 2026-05-22 00:45:27,994 basehttp "GET /products/ HTTP/1.1" 200 14145
+INFO 2026-05-22 00:45:29,152 basehttp "GET /cart/add/9/ HTTP/1.1" 302 0
+INFO 2026-05-22 00:45:29,184 basehttp "GET /products/ HTTP/1.1" 200 14145
+INFO 2026-05-22 00:45:30,943 basehttp "GET /cart/ HTTP/1.1" 200 9779
+INFO 2026-05-22 00:45:32,413 basehttp "GET /order/create/ HTTP/1.1" 302 0
+INFO 2026-05-22 00:45:32,830 basehttp "GET / HTTP/1.1" 200 12551
+INFO 2026-05-22 00:45:34,917 basehttp "GET / HTTP/1.1" 200 12581
+INFO 2026-05-22 00:45:37,789 basehttp "GET /products/ HTTP/1.1" 200 14145
+INFO 2026-05-22 00:46:42,854 basehttp "GET /reviews/ HTTP/1.1" 200 13260
+INFO 2026-05-22 00:50:10,327 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 19604
+INFO 2026-05-22 00:50:13,889 basehttp "GET /employee/order/19/ HTTP/1.1" 200 10999
+INFO 2026-05-22 00:50:22,399 basehttp "POST /employee/order/19/ HTTP/1.1" 302 0
+INFO 2026-05-22 00:50:22,434 basehttp "GET /employee/order/19/ HTTP/1.1" 200 10999
+INFO 2026-05-22 00:50:26,966 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 19603
+INFO 2026-05-22 00:50:28,957 basehttp "GET /employee/order/19/edit/ HTTP/1.1" 200 13373
+INFO 2026-05-22 00:50:32,380 basehttp "POST /employee/order/19/edit/ HTTP/1.1" 302 0
+INFO 2026-05-22 00:50:32,408 basehttp "GET /employee/order/19/ HTTP/1.1" 200 10999
+INFO 2026-05-22 00:50:45,139 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 19603
+INFO 2026-05-22 00:50:49,106 basehttp "GET /employee/order/10/ HTTP/1.1" 200 11934
+INFO 2026-05-22 00:51:00,193 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 19603
+INFO 2026-05-22 00:51:03,920 basehttp "GET /employee/order/11/edit/ HTTP/1.1" 200 13368
+INFO 2026-05-22 00:59:24,530 autoreload D:\453502\IGI_LR5\shop\views.py changed, reloading.
+INFO 2026-05-22 00:59:26,411 autoreload Watching for file changes with StatReloader
+INFO 2026-05-22 01:02:45,626 autoreload Watching for file changes with StatReloader
+INFO 2026-05-22 01:02:55,723 basehttp "GET / HTTP/1.1" 200 12379
+INFO 2026-05-22 01:03:00,620 basehttp "GET / HTTP/1.1" 200 12630
+WARNING 2026-05-22 01:03:00,918 log Not Found: /favicon.ico
+WARNING 2026-05-22 01:03:00,919 basehttp "GET /favicon.ico HTTP/1.1" 404 14026
+INFO 2026-05-22 01:03:06,841 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 19603
+INFO 2026-05-22 01:03:10,789 basehttp "GET /products/ HTTP/1.1" 200 14145
+INFO 2026-05-22 01:03:15,752 basehttp "GET /admin/ HTTP/1.1" 200 20309
+INFO 2026-05-22 01:03:18,640 basehttp "GET / HTTP/1.1" 200 12623
+INFO 2026-05-22 01:03:24,439 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 19603
+INFO 2026-05-22 01:03:27,673 basehttp "GET /employee/order/19/ HTTP/1.1" 200 10999
+INFO 2026-05-22 01:03:45,290 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 19603
+INFO 2026-05-22 01:03:52,729 basehttp "GET /employee/order/create/ HTTP/1.1" 200 11024
+INFO 2026-05-22 01:04:25,726 basehttp "POST /employee/order/create/ HTTP/1.1" 200 11261
+INFO 2026-05-22 01:04:41,746 basehttp "GET /promocodes/ HTTP/1.1" 200 8482
+INFO 2026-05-22 01:04:53,185 basehttp "POST /employee/order/create/ HTTP/1.1" 200 11261
+INFO 2026-05-22 01:05:15,477 basehttp "POST /employee/order/create/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:05:15,515 basehttp "GET /employee/order/20/edit/ HTTP/1.1" 200 13387
+INFO 2026-05-22 01:05:28,648 basehttp "POST /employee/order/20/edit/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:05:28,673 basehttp "GET /employee/order/20/ HTTP/1.1" 200 10173
+INFO 2026-05-22 01:05:33,157 basehttp "GET /employee/order/20/add-item/ HTTP/1.1" 200 10785
+INFO 2026-05-22 01:05:41,361 basehttp "POST /employee/order/20/add-item/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:05:41,398 basehttp "GET /employee/order/20/ HTTP/1.1" 200 10558
+INFO 2026-05-22 01:05:47,840 basehttp "GET /employee/order/20/add-item/ HTTP/1.1" 200 10785
+INFO 2026-05-22 01:05:54,566 basehttp "POST /employee/order/20/add-item/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:05:54,593 basehttp "GET /employee/order/20/ HTTP/1.1" 200 11028
+INFO 2026-05-22 01:06:01,784 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 20312
+INFO 2026-05-22 01:06:05,566 basehttp "GET /employee/order/20/ HTTP/1.1" 200 11028
+INFO 2026-05-22 01:06:09,666 basehttp "POST /employee/order/20/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:06:09,701 basehttp "GET /employee/order/20/ HTTP/1.1" 200 11028
+INFO 2026-05-22 01:06:14,651 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 20312
+INFO 2026-05-22 01:06:16,878 basehttp "GET /employee/order/20/edit/ HTTP/1.1" 200 13389
+INFO 2026-05-22 01:06:36,495 basehttp "POST /employee/order/20/edit/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:06:36,532 basehttp "GET /employee/order/20/ HTTP/1.1" 200 11028
+INFO 2026-05-22 01:06:41,958 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 20312
+INFO 2026-05-22 01:07:15,774 autoreload Watching for file changes with StatReloader
+INFO 2026-05-22 01:07:29,598 basehttp "GET / HTTP/1.1" 200 12338
+INFO 2026-05-22 01:07:32,499 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 15857
+INFO 2026-05-22 01:07:46,818 basehttp "GET /products/ HTTP/1.1" 200 13918
+INFO 2026-05-22 01:07:48,793 basehttp "GET /cart/ HTTP/1.1" 200 7827
+INFO 2026-05-22 01:07:50,665 basehttp "GET /reviews/ HTTP/1.1" 200 11164
+INFO 2026-05-22 01:07:55,029 basehttp "GET /promocodes/ HTTP/1.1" 200 8482
+INFO 2026-05-22 01:07:57,508 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 15857
+INFO 2026-05-22 01:07:59,122 basehttp "GET /employee/order/create/ HTTP/1.1" 200 10797
+INFO 2026-05-22 01:08:25,960 basehttp "POST /employee/order/create/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:08:25,988 basehttp "GET /employee/order/21/edit/ HTTP/1.1" 200 13160
+INFO 2026-05-22 01:08:34,922 basehttp "POST /employee/order/21/edit/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:08:34,952 basehttp "GET /employee/order/21/ HTTP/1.1" 200 9946
+INFO 2026-05-22 01:09:26,151 basehttp "GET /employee/order/21/add-item/ HTTP/1.1" 200 10558
+INFO 2026-05-22 01:09:33,519 basehttp "POST /employee/order/21/add-item/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:09:33,544 basehttp "GET /employee/order/21/ HTTP/1.1" 200 10318
+INFO 2026-05-22 01:09:37,283 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 16567
+INFO 2026-05-22 01:09:44,511 basehttp "GET /employee/order/21/ HTTP/1.1" 200 10318
+INFO 2026-05-22 01:10:46,575 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 16567
+INFO 2026-05-22 01:10:51,713 basehttp "GET /products/ HTTP/1.1" 200 13918
+INFO 2026-05-22 01:10:52,926 basehttp "GET /cart/ HTTP/1.1" 200 7827
+INFO 2026-05-22 01:10:55,530 basehttp "GET / HTTP/1.1" 200 12378
+INFO 2026-05-22 01:11:03,709 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 16567
+INFO 2026-05-22 01:11:05,642 basehttp "GET /privacy/ HTTP/1.1" 200 7441
+INFO 2026-05-22 01:11:07,781 basehttp "GET /calendar/ HTTP/1.1" 200 13475
+INFO 2026-05-22 01:11:09,024 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 16567
+INFO 2026-05-22 01:11:15,858 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:11:16,230 basehttp "GET / HTTP/1.1" 200 11967
+INFO 2026-05-22 01:11:18,670 basehttp "GET /reviews/ HTTP/1.1" 200 10700
+INFO 2026-05-22 01:11:20,616 basehttp "GET /login/ HTTP/1.1" 200 8773
+INFO 2026-05-22 01:11:31,618 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:11:31,633 basehttp "GET /redirect-after-login/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:11:31,652 basehttp "GET /products/ HTTP/1.1" 200 14227
+INFO 2026-05-22 01:11:33,960 basehttp "GET /reviews/ HTTP/1.1" 200 13342
+INFO 2026-05-22 01:11:49,090 basehttp "POST /reviews/add/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:11:49,135 basehttp "GET /reviews/ HTTP/1.1" 200 13342
+INFO 2026-05-22 01:12:21,987 basehttp "GET /orders/ HTTP/1.1" 200 8913
+INFO 2026-05-22 01:12:29,563 basehttp "GET /cart/ HTTP/1.1" 200 8136
+INFO 2026-05-22 01:12:31,057 basehttp "GET /reviews/ HTTP/1.1" 200 13342
+INFO 2026-05-22 01:12:32,588 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:12:32,915 basehttp "GET / HTTP/1.1" 200 11943
+INFO 2026-05-22 01:12:33,948 basehttp "GET /login/ HTTP/1.1" 200 8773
+INFO 2026-05-22 01:12:41,633 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:12:41,640 basehttp "GET /redirect-after-login/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:12:41,689 basehttp "GET /admin/ HTTP/1.1" 200 20707
+INFO 2026-05-22 01:12:49,820 basehttp "GET /admin/shop/review/ HTTP/1.1" 200 23922
+INFO 2026-05-22 01:12:49,853 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-22 01:12:58,679 basehttp "GET /admin/shop/order/ HTTP/1.1" 200 73570
+INFO 2026-05-22 01:12:58,705 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-22 01:13:11,375 basehttp "GET /admin/shop/order/21/change/ HTTP/1.1" 200 41578
+INFO 2026-05-22 01:13:11,402 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-22 01:13:24,007 basehttp "GET / HTTP/1.1" 200 12573
+INFO 2026-05-22 01:13:25,201 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 21021
+INFO 2026-05-22 01:13:29,976 basehttp "GET /products/ HTTP/1.1" 200 14145
+INFO 2026-05-22 01:13:33,935 basehttp "GET / HTTP/1.1" 200 12550
+INFO 2026-05-22 01:14:03,120 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:14:03,505 basehttp "GET / HTTP/1.1" 200 11972
+INFO 2026-05-22 01:14:04,838 basehttp "GET /login/ HTTP/1.1" 200 8773
+INFO 2026-05-22 01:14:13,145 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:14:13,155 basehttp "GET /redirect-after-login/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:14:13,175 basehttp "GET /products/ HTTP/1.1" 200 14227
+INFO 2026-05-22 01:14:17,254 basehttp "GET /orders/ HTTP/1.1" 200 8913
+INFO 2026-05-22 01:19:51,773 autoreload Watching for file changes with StatReloader
+INFO 2026-05-22 01:19:55,898 basehttp "GET / HTTP/1.1" 200 12627
+INFO 2026-05-22 01:20:00,231 basehttp "GET / HTTP/1.1" 200 13158
+WARNING 2026-05-22 01:20:00,592 log Not Found: /favicon.ico
+WARNING 2026-05-22 01:20:00,593 basehttp "GET /favicon.ico HTTP/1.1" 404 14026
+INFO 2026-05-22 01:20:05,032 basehttp "GET /admin-panel/products/ HTTP/1.1" 200 12493
+INFO 2026-05-22 01:20:08,252 basehttp "GET /admin/shop/product/1/change/ HTTP/1.1" 200 28599
+INFO 2026-05-22 01:20:08,293 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-22 01:20:13,134 basehttp "GET / HTTP/1.1" 200 13271
+INFO 2026-05-22 01:20:17,993 basehttp "GET /admin-panel/sales/ HTTP/1.1" 200 9812
+ERROR 2026-05-22 01:20:24,051 log Internal Server Error: /admin-panel/categories/
+Traceback (most recent call last):
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\453502\IGI_LR5\shop\views.py", line 1110, in admin_categories
+    return render(request, 'shop/admin_categories.html', context)
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: shop/admin_categories.html
+ERROR 2026-05-22 01:20:24,060 basehttp "GET /admin-panel/categories/ HTTP/1.1" 500 88579
+ERROR 2026-05-22 01:20:35,363 log Internal Server Error: /admin-panel/categories/
+Traceback (most recent call last):
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\453502\IGI_LR5\shop\views.py", line 1110, in admin_categories
+    return render(request, 'shop/admin_categories.html', context)
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: shop/admin_categories.html
+ERROR 2026-05-22 01:20:35,368 basehttp "GET /admin-panel/categories/ HTTP/1.1" 500 88579
+INFO 2026-05-22 01:20:52,922 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 21572
+INFO 2026-05-22 01:20:58,567 basehttp "GET /employee/order/21/ HTTP/1.1" 200 11162
+INFO 2026-05-22 01:21:07,018 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 21572
+INFO 2026-05-22 01:21:09,187 basehttp "GET /employee/order/21/edit/ HTTP/1.1" 200 13940
+INFO 2026-05-22 01:21:13,490 basehttp "POST /employee/order/21/edit/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:21:13,522 basehttp "GET /employee/order/21/ HTTP/1.1" 200 11162
+INFO 2026-05-22 01:21:16,837 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 21572
+INFO 2026-05-22 01:21:18,866 basehttp "GET /employee/order/21/edit/ HTTP/1.1" 200 13932
+INFO 2026-05-22 01:21:23,859 basehttp "POST /employee/order/21/edit/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:21:23,895 basehttp "GET /employee/order/21/ HTTP/1.1" 200 11162
+INFO 2026-05-22 01:21:31,847 basehttp "POST /employee/order/21/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:21:31,877 basehttp "GET /employee/order/21/ HTTP/1.1" 200 11162
+INFO 2026-05-22 01:21:32,778 basehttp "POST /employee/order/21/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:21:32,806 basehttp "GET /employee/order/21/ HTTP/1.1" 200 11162
+INFO 2026-05-22 01:21:33,401 basehttp "POST /employee/order/21/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:21:33,428 basehttp "GET /employee/order/21/ HTTP/1.1" 200 11162
+INFO 2026-05-22 01:21:39,066 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 21572
+INFO 2026-05-22 01:21:43,015 basehttp "GET /employee/order/20/ HTTP/1.1" 200 11645
+INFO 2026-05-22 01:21:48,723 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 21572
+INFO 2026-05-22 01:21:50,253 basehttp "GET /employee/order/20/edit/ HTTP/1.1" 200 13940
+INFO 2026-05-22 01:21:55,410 basehttp "POST /employee/order/20/edit/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:21:55,447 basehttp "GET /employee/order/20/ HTTP/1.1" 200 11645
+INFO 2026-05-22 01:22:00,129 basehttp "POST /employee/order/20/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:22:00,159 basehttp "GET /employee/order/20/ HTTP/1.1" 200 11645
+INFO 2026-05-22 01:22:00,847 basehttp "POST /employee/order/20/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:22:00,877 basehttp "GET /employee/order/20/ HTTP/1.1" 200 11645
+INFO 2026-05-22 01:22:03,750 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 21572
+INFO 2026-05-22 01:22:12,960 basehttp "GET /statistics/ HTTP/1.1" 200 154098
+INFO 2026-05-22 01:22:34,143 basehttp "GET /admin-panel/sales/ HTTP/1.1" 200 9812
+INFO 2026-05-22 01:22:44,559 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 21572
+INFO 2026-05-22 01:22:47,565 basehttp "GET /statistics/ HTTP/1.1" 200 154098
+INFO 2026-05-22 01:23:32,679 basehttp "GET /reviews/ HTTP/1.1" 200 11942
+INFO 2026-05-22 01:23:36,261 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 21572
+INFO 2026-05-22 01:23:40,013 basehttp "GET /employee/order/21/edit/ HTTP/1.1" 200 13940
+INFO 2026-05-22 01:23:49,098 basehttp "POST /employee/order/21/edit/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:23:49,126 basehttp "GET /employee/order/21/ HTTP/1.1" 200 11162
+INFO 2026-05-22 01:24:20,611 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 21572
+INFO 2026-05-22 01:24:22,634 basehttp "GET /employee/order/create/ HTTP/1.1" 200 11575
+INFO 2026-05-22 01:24:48,107 basehttp "POST /employee/order/create/ HTTP/1.1" 200 11788
+INFO 2026-05-22 01:25:04,103 basehttp "POST /employee/order/create/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:25:04,133 basehttp "GET /employee/order/22/edit/ HTTP/1.1" 200 13912
+INFO 2026-05-22 01:25:13,640 basehttp "POST /employee/order/22/edit/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:25:13,668 basehttp "GET /employee/order/22/ HTTP/1.1" 200 10764
+INFO 2026-05-22 01:25:15,666 basehttp "GET /employee/order/22/add-item/ HTTP/1.1" 200 11334
+INFO 2026-05-22 01:25:21,961 basehttp "POST /employee/order/22/add-item/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:25:21,986 basehttp "GET /employee/order/22/ HTTP/1.1" 200 11153
+INFO 2026-05-22 01:26:56,036 basehttp "POST /employee/order/22/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:26:56,061 basehttp "GET /employee/order/22/ HTTP/1.1" 200 11153
+INFO 2026-05-22 01:26:57,315 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 22279
+INFO 2026-05-22 01:27:00,618 basehttp "GET /employee/order/22/ HTTP/1.1" 200 11153
+INFO 2026-05-22 01:27:03,916 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 22279
+INFO 2026-05-22 01:27:08,787 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 22279
+INFO 2026-05-22 01:27:11,856 basehttp "GET /contacts/ HTTP/1.1" 200 10761
+INFO 2026-05-22 01:27:15,381 basehttp "GET /statistics/ HTTP/1.1" 200 154051
+INFO 2026-05-22 01:27:16,375 basehttp "GET /promocodes/ HTTP/1.1" 200 9260
+INFO 2026-05-22 01:27:23,492 basehttp "GET /admin/ HTTP/1.1" 200 21936
+INFO 2026-05-22 01:27:26,219 basehttp "GET / HTTP/1.1" 200 13152
+INFO 2026-05-22 01:27:28,128 basehttp "GET /admin-panel/products/ HTTP/1.1" 200 12493
+INFO 2026-05-22 01:27:31,920 basehttp "GET /admin/shop/product/2/change/ HTTP/1.1" 200 28582
+INFO 2026-05-22 01:27:31,943 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-22 01:27:34,215 basehttp "GET / HTTP/1.1" 200 13154
+INFO 2026-05-22 01:27:36,410 basehttp "GET /admin-panel/products/ HTTP/1.1" 200 12493
+INFO 2026-05-22 01:28:20,068 basehttp "GET /admin/shop/product/1/change/ HTTP/1.1" 200 28599
+INFO 2026-05-22 01:28:20,089 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-22 01:28:23,833 basehttp "GET / HTTP/1.1" 200 13233
+INFO 2026-05-22 01:28:50,538 basehttp "GET /admin-panel/products/ HTTP/1.1" 200 12493
+ERROR 2026-05-22 01:28:58,825 log Internal Server Error: /admin-panel/product/create/
+Traceback (most recent call last):
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\453502\IGI_LR5\shop\views.py", line 941, in admin_product_create
+    return render(request, 'shop/admin_product_form.html', context)
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\msys64\ucrt64\lib\python3.14\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: shop/admin_product_form.html
+ERROR 2026-05-22 01:28:58,829 basehttp "GET /admin-panel/product/create/ HTTP/1.1" 500 89327
+INFO 2026-05-22 01:29:18,750 basehttp "GET /cart/ HTTP/1.1" 200 10330
+INFO 2026-05-22 01:29:21,105 basehttp "GET /promocodes/ HTTP/1.1" 200 9260
+INFO 2026-05-22 01:29:30,182 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:29:30,497 basehttp "GET / HTTP/1.1" 200 11929
+INFO 2026-05-22 01:29:31,915 basehttp "GET /login/ HTTP/1.1" 200 8773
+INFO 2026-05-22 01:29:38,953 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:29:38,964 basehttp "GET /redirect-after-login/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:29:38,987 basehttp "GET /products/ HTTP/1.1" 200 14227
+INFO 2026-05-22 01:29:42,228 basehttp "GET /orders/ HTTP/1.1" 200 8913
+INFO 2026-05-22 01:30:27,683 basehttp "GET /reviews/ HTTP/1.1" 200 13342
+INFO 2026-05-22 01:30:49,653 basehttp "POST /reviews/add/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:30:49,694 basehttp "GET /reviews/ HTTP/1.1" 200 13735
+INFO 2026-05-22 01:31:09,114 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:31:09,512 basehttp "GET / HTTP/1.1" 200 11966
+INFO 2026-05-22 01:31:10,959 basehttp "GET /login/ HTTP/1.1" 200 8773
+INFO 2026-05-22 01:31:24,983 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:31:24,993 basehttp "GET /redirect-after-login/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:31:25,029 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 16567
+INFO 2026-05-22 01:31:27,404 basehttp "GET /employee/order/21/ HTTP/1.1" 200 10384
+INFO 2026-05-22 01:31:34,858 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 16567
+INFO 2026-05-22 01:31:37,370 basehttp "GET /employee/order/21/edit/ HTTP/1.1" 200 13162
+INFO 2026-05-22 01:37:31,340 autoreload Watching for file changes with StatReloader
+INFO 2026-05-22 01:37:39,975 basehttp "GET / HTTP/1.1" 200 12687
+INFO 2026-05-22 01:37:43,967 basehttp "GET / HTTP/1.1" 200 12382
+WARNING 2026-05-22 01:37:44,272 log Not Found: /favicon.ico
+WARNING 2026-05-22 01:37:44,273 basehttp "GET /favicon.ico HTTP/1.1" 404 14026
+INFO 2026-05-22 01:37:47,414 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 16567
+INFO 2026-05-22 01:37:51,599 basehttp "GET /employee/order/21/ HTTP/1.1" 200 10384
+INFO 2026-05-22 01:38:01,406 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 16567
+INFO 2026-05-22 01:38:03,223 basehttp "GET /employee/order/21/edit/ HTTP/1.1" 200 13337
+INFO 2026-05-22 01:38:09,749 basehttp "POST /employee/order/21/edit/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:38:09,788 basehttp "GET /employee/order/21/ HTTP/1.1" 200 10384
+INFO 2026-05-22 01:38:13,426 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 16567
+INFO 2026-05-22 01:38:20,784 basehttp "GET /contacts/ HTTP/1.1" 200 9983
+INFO 2026-05-22 01:38:36,720 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 16567
+INFO 2026-05-22 01:38:42,311 basehttp "GET /employee/order/create/ HTTP/1.1" 200 10797
+INFO 2026-05-22 01:39:17,406 basehttp "POST /employee/order/create/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:39:17,441 basehttp "GET /employee/order/23/add-item/ HTTP/1.1" 200 10558
+INFO 2026-05-22 01:39:32,653 basehttp "POST /employee/order/23/add-item/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:39:32,682 basehttp "GET /employee/order/23/ HTTP/1.1" 200 10386
+INFO 2026-05-22 01:39:42,689 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 17277
+INFO 2026-05-22 01:39:46,544 basehttp "GET /employee/order/23/edit/ HTTP/1.1" 200 13329
+INFO 2026-05-22 01:39:54,628 basehttp "POST /employee/order/23/edit/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:39:54,664 basehttp "GET /employee/order/23/ HTTP/1.1" 200 10386
+INFO 2026-05-22 01:40:03,906 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 17277
+INFO 2026-05-22 01:40:07,269 basehttp "GET /reviews/ HTTP/1.1" 200 11557
+INFO 2026-05-22 01:40:11,425 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:40:11,791 basehttp "GET / HTTP/1.1" 200 12065
+INFO 2026-05-22 01:40:13,303 basehttp "GET /login/ HTTP/1.1" 200 8773
+INFO 2026-05-22 01:40:26,161 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:40:26,177 basehttp "GET /redirect-after-login/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:40:26,208 basehttp "GET /products/ HTTP/1.1" 200 14227
+INFO 2026-05-22 01:40:30,452 basehttp "GET /orders/ HTTP/1.1" 200 9134
+INFO 2026-05-22 01:40:44,047 basehttp "GET /pickup-points/ HTTP/1.1" 200 8157
+INFO 2026-05-22 01:40:46,872 basehttp "GET /promocodes/ HTTP/1.1" 200 8791
+INFO 2026-05-22 01:40:48,332 basehttp "GET /reviews/ HTTP/1.1" 200 13735
+INFO 2026-05-22 01:40:52,741 basehttp "GET /products/ HTTP/1.1" 200 14227
+INFO 2026-05-22 01:40:54,262 basehttp "GET / HTTP/1.1" 200 12651
+INFO 2026-05-22 01:41:01,448 basehttp "GET /cart/ HTTP/1.1" 200 8136
+INFO 2026-05-22 01:41:04,172 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:41:04,511 basehttp "GET / HTTP/1.1" 200 11925
+INFO 2026-05-22 01:41:05,983 basehttp "GET /login/ HTTP/1.1" 200 8773
+INFO 2026-05-22 01:41:12,114 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:41:12,131 basehttp "GET /redirect-after-login/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:41:12,351 basehttp "GET /admin/ HTTP/1.1" 200 20806
+INFO 2026-05-22 01:41:17,538 basehttp "GET / HTTP/1.1" 200 13123
+INFO 2026-05-22 01:41:20,730 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 22989
+INFO 2026-05-22 01:41:25,100 basehttp "GET /employee/order/23/edit/ HTTP/1.1" 200 14115
+INFO 2026-05-22 01:41:30,397 basehttp "POST /employee/order/23/edit/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:41:30,430 basehttp "GET /employee/order/23/ HTTP/1.1" 200 11164
+INFO 2026-05-22 01:41:33,194 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 22995
+INFO 2026-05-22 01:41:36,499 basehttp "GET /admin-panel/products/ HTTP/1.1" 200 12493
+INFO 2026-05-22 01:41:39,212 basehttp "GET /admin/shop/product/1/change/ HTTP/1.1" 200 28751
+INFO 2026-05-22 01:41:39,244 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-22 01:41:42,564 basehttp "GET / HTTP/1.1" 200 13302
+INFO 2026-05-22 01:41:45,092 basehttp "GET /admin-panel/sales/ HTTP/1.1" 200 9814
+INFO 2026-05-22 01:41:48,598 basehttp "GET /admin-panel/categories/ HTTP/1.1" 200 10928
+INFO 2026-05-22 01:42:00,865 basehttp "GET /admin/shop/category/6/change/ HTTP/1.1" 200 16804
+INFO 2026-05-22 01:42:00,894 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-22 01:42:10,844 basehttp "GET / HTTP/1.1" 200 13143
+INFO 2026-05-22 01:42:15,506 basehttp "GET /admin-panel/categories/ HTTP/1.1" 200 10928
+INFO 2026-05-22 01:42:33,114 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 22995
+INFO 2026-05-22 01:42:35,230 basehttp "GET /admin-panel/products/ HTTP/1.1" 200 12493
+INFO 2026-05-22 01:42:41,930 basehttp "GET /admin-panel/product/create/ HTTP/1.1" 200 10505
+INFO 2026-05-22 01:43:14,902 basehttp "POST /admin-panel/product/create/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:43:14,930 basehttp "GET /admin-panel/products/ HTTP/1.1" 200 12767
+INFO 2026-05-22 01:43:20,921 basehttp "GET /admin/shop/product/16/change/ HTTP/1.1" 200 28749
+INFO 2026-05-22 01:43:20,947 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-22 01:43:26,543 basehttp "GET / HTTP/1.1" 200 13131
+INFO 2026-05-22 01:43:33,879 basehttp "GET /admin-panel/products/ HTTP/1.1" 200 12767
+INFO 2026-05-22 01:43:38,841 basehttp "GET /statistics/ HTTP/1.1" 200 153360
+INFO 2026-05-22 01:43:40,636 basehttp "GET /admin-panel/categories/ HTTP/1.1" 200 10928
+INFO 2026-05-22 01:43:48,267 basehttp "GET /admin-panel/products/ HTTP/1.1" 200 12767
+INFO 2026-05-22 01:46:12,886 basehttp "GET /admin/shop/product/1/change/ HTTP/1.1" 200 28599
+INFO 2026-05-22 01:46:12,920 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16820
+INFO 2026-05-22 01:46:48,075 basehttp "GET /admin-panel/categories/ HTTP/1.1" 200 10928
+INFO 2026-05-22 01:46:53,267 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:46:53,675 basehttp "GET / HTTP/1.1" 200 11959
+INFO 2026-05-22 01:46:57,193 basehttp "GET /promocodes/ HTTP/1.1" 200 8061
+INFO 2026-05-22 01:46:58,255 basehttp "GET /reviews/ HTTP/1.1" 200 11093
+INFO 2026-05-22 01:47:00,133 basehttp "GET /cart/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:47:00,159 basehttp "GET /login/?next=/cart/ HTTP/1.1" 200 8773
+INFO 2026-05-22 01:47:01,724 basehttp "GET /products/ HTTP/1.1" 200 13443
+INFO 2026-05-22 01:47:03,309 basehttp "GET / HTTP/1.1" 200 11961
+INFO 2026-05-22 01:49:22,164 autoreload D:\453502\IGI_LR5\shop\views.py changed, reloading.
+INFO 2026-05-22 01:49:24,253 autoreload Watching for file changes with StatReloader
+INFO 2026-05-22 01:49:53,442 autoreload Watching for file changes with StatReloader
+INFO 2026-05-22 01:49:57,146 basehttp "GET / HTTP/1.1" 200 12660
+INFO 2026-05-22 01:50:00,563 basehttp "GET / HTTP/1.1" 200 11937
+WARNING 2026-05-22 01:50:00,822 log Not Found: /favicon.ico
+WARNING 2026-05-22 01:50:00,824 basehttp "GET /favicon.ico HTTP/1.1" 404 13737
+INFO 2026-05-22 01:50:04,750 basehttp "GET /login/ HTTP/1.1" 200 8773
+INFO 2026-05-22 01:50:11,118 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:50:11,131 basehttp "GET /redirect-after-login/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:50:11,214 basehttp "GET /admin/ HTTP/1.1" 200 20309
+INFO 2026-05-22 01:50:14,057 basehttp "GET / HTTP/1.1" 200 13172
+INFO 2026-05-22 01:50:17,734 basehttp "GET /admin-panel/products/ HTTP/1.1" 200 20114
+INFO 2026-05-22 01:50:28,161 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 22995
+INFO 2026-05-22 01:50:31,332 basehttp "GET /admin-panel/sales/ HTTP/1.1" 200 9814
+INFO 2026-05-22 01:50:33,514 basehttp "GET /admin-panel/categories/ HTTP/1.1" 200 10928
+INFO 2026-05-22 01:50:35,766 basehttp "GET /admin-panel/products/ HTTP/1.1" 200 20114
+INFO 2026-05-22 01:50:40,096 basehttp "GET /promocodes/ HTTP/1.1" 200 9260
+INFO 2026-05-22 01:50:43,697 basehttp "GET /admin-panel/products/ HTTP/1.1" 200 20114
+INFO 2026-05-22 01:50:48,962 basehttp "GET /admin-panel/sales/ HTTP/1.1" 200 9814
+INFO 2026-05-22 01:50:51,014 basehttp "GET /admin-panel/products/ HTTP/1.1" 200 20114
+INFO 2026-05-22 01:50:58,305 basehttp "GET /admin-panel/product/16/edit/ HTTP/1.1" 200 12092
+INFO 2026-05-22 01:51:07,395 basehttp "POST /admin-panel/product/16/edit/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:51:07,428 basehttp "GET /admin-panel/products/ HTTP/1.1" 200 20114
+INFO 2026-05-22 01:51:14,448 basehttp "GET /admin-panel/product/16/edit/ HTTP/1.1" 200 12092
+INFO 2026-05-22 01:51:20,373 basehttp "POST /admin-panel/product/16/edit/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:51:20,408 basehttp "GET /admin-panel/products/ HTTP/1.1" 200 20114
+INFO 2026-05-22 01:51:29,784 basehttp "GET /admin-panel/product/16/edit/ HTTP/1.1" 200 12092
+INFO 2026-05-22 01:51:35,499 basehttp "POST /admin-panel/product/16/edit/ HTTP/1.1" 302 0
+INFO 2026-05-22 01:51:35,526 basehttp "GET /admin-panel/products/ HTTP/1.1" 200 20114
+INFO 2026-05-22 01:51:49,036 basehttp "GET /admin-panel/products/?search=%D0%9C%D0%B5%D0%B4%D0%BE%D0%B2%D0%B8%D0%BA HTTP/1.1" 200 11055
+INFO 2026-05-22 01:51:54,301 basehttp "GET /employee/dashboard/ HTTP/1.1" 200 22995
+INFO 2026-05-22 01:51:56,260 basehttp "GET /reviews/ HTTP/1.1" 200 12335
+INFO 2026-05-22 01:52:00,050 basehttp "GET /statistics/ HTTP/1.1" 200 153360
+INFO 2026-05-22 01:52:14,252 autoreload D:\453502\IGI_LR5\shop\urls.py changed, reloading.
+INFO 2026-05-22 01:52:15,997 autoreload Watching for file changes with StatReloader
